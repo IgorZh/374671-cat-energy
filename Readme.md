@@ -1,7 +1,7 @@
 # Личный проект «Кэт энерджи» [![Build status][travis-image]][travis-url] [![Dependency status][dependency-image]][dependency-url]
 
 * Студент: [Игорь Железнов](https://up.htmlacademy.ru/adaptive/13/user/374671).
-* Наставник: `Неизвестно`.
+* Наставник: [Александр Распономарев](https://htmlacademy.ru/profile/id64492).
 
 ---
 
@@ -9,7 +9,7 @@
 
 Полезный файл:
 
-- [Contributing.md](Contributing.md) — руководство по внесению изменений.
+* [Contributing.md](Contributing.md) — руководство по внесению изменений.
 
 _Не удаляйте и не обращайте внимание на файлы:_<br>
 _`.editorconfig`, `.gitattributes`, `.gitignore`, `.stylelintrc`, `.travis.yml`, `package-lock.json`, `package.json`._
