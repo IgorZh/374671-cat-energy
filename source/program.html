@@ -10,7 +10,7 @@
   <header class="program-header">
     <a class="logo"
       href="#">
-      <img class="index-header__logo-image"
+      <img class="logo-image"
         src="http://placehold.it/33x38"
         width="33"
         height="38"
@@ -21,13 +21,13 @@
       <button class="main-nav__toggle">Открыть меню</button>
       <ul class="main-nav__list">
         <li class="main-nav__item">
-          Главная
+          <a href="index.html">Главная</a>
         </li>
         <li class="main-nav__item">
-          Каталог продукции
+          <a href="catalog.html">Каталог продукции</a>
         </li>
         <li class="main-nav__item">
-          Подбор программы
+          <a href="program.html">Подбор программы</a>
         </li>
       </ul>
     </nav>
@@ -35,14 +35,14 @@
   <main class="program-main">
     <header "program-main__header">
       <h1>Подбор программы</h1>
-      <span class="program-main__description">Заполните анкету и мы подберем программу питания для вашего кота</span>
+      <div class="program-main__description">Заполните анкету и мы подберем программу питания для вашего кота</div>
     </header>
     <form method="POST"
       action="https://echo.htmlacademy.ru">
       <section class="personal">
         <h2 class="visualy-hidden">Персональные данные</h2>
         <div class="form-field">
-          <label class="form-field__label--required"
+          <label class="form-field__label form-field__label--required"
             for="name">Имя:</label>
           <input class="form-field__input"
             type="text"
@@ -52,7 +52,7 @@
             required />
         </div>
         <div class="form-field">
-          <label class="form-field__label--required"
+          <label class="form-field__label form-field__label--required"
             for="weight">Вес (кг):</label>
           <input class="form-field__input"
             type="number"
@@ -64,7 +64,7 @@
             required />
         </div>
         <div class="form-field">
-          <label class="form-field__label--required"
+          <label class="form-field__label form-field__label--required"
             for="age">Возраст (лет):</label>
           <input class="form-field__input"
             type="number"
@@ -78,7 +78,7 @@
         <h2 class="visualy-hidden">Персональные данные</h2>
         <div class="form-field">
           <label class="form-field__label">
-            <input class="form-field__input--radio"
+            <input class="form-field__input form-field__input--radio"
               type="radio"
               name="aim"
               value="slimming"
@@ -86,7 +86,7 @@
         </div>
         <div class="form-field">
           <label class="form-field__label">
-            <input class="form-field__input--radio"
+            <input class="form-field__input form-field__input--radio"
               type="radio"
               name="aim"
               value="weight"
@@ -94,7 +94,7 @@
         </div>
         <div class="form-field">
           <label class="form-field__label">
-            <input class="form-field__input--radio"
+            <input class="form-field__input form-field__input--radio"
               type="radio"
               name="aim"
               value="advice"
@@ -104,9 +104,9 @@
       <section>
         <h2 class="section-header">Контактные данные (владельца кота)</h2>
         <div class="form-field">
-          <label class="form-field__label--required"
+          <label class="form-field__label form-field__label--required"
             for="email">E-mail:</label>
-          <input class="form-field__input--email"
+          <input class="form-field__input form-field__input--email"
             type="email"
             id="email"
             name="email"
@@ -115,9 +115,9 @@
             required />
         </div>
         <div class="form-field">
-          <label class="form-field__label--required"
+          <label class="form-field__label form-field__label--required"
             for="phone">E-mail:</label>
-          <input class="form-field__input--phone"
+          <input class="form-field__input form-field__input--phone"
             type="tel"
             id="phone"
             name="phone"
@@ -136,7 +136,7 @@
         <h2 class="section-header">Дополнительно</h2>
         <div class="form-field">
           <label class="form-field__label">
-            <input class="form-field__input--checkbox"
+            <input class="form-field__input form-field__input--checkbox"
               type="checkbox"
               name="additionals"
               value="sweetener"
@@ -144,27 +144,27 @@
         </div>
         <div class="form-field">
           <label class="form-field__label">
-            <input class="form-field__input--checkbox"
+            <input class="form-field__input form-field__input--checkbox"
               type="checkbox"
               name="additionals"
               value="water" />Питьевая вода</label>
         </div>
         <div class="form-field">
           <label class="form-field__label">
-            <input class="form-field__input--checkbox"
+            <input class="form-field__input form-field__input--checkbox"
               type="checkbox"
               name="additionals"
               value="milk" />Молоко</label>
         </div>
         <div class="form-field">
           <label class="form-field__label">
-            <input class="form-field__input--checkbox"
+            <input class="form-field__input form-field__input--checkbox"
               type="checkbox"
               name="additionals"
               value="vitamins" />Витамины</label>
         </div>
       </section>
-      <button class="program-main__button button--primary">Отправить заявку</button>
+      <button class="program-main__button button button--primary">Отправить заявку</button>
       <small class="program-main__legend">* — Обязательные поля</small>
     </form>
     <footer class="program-footer">
@@ -176,8 +176,8 @@
           приглашаем к сотрудничеству дилеров!
         </p>
       </div>
-      <div class="map" />
-      <div class="index-footer__social social">
+      <div class="map"></div>
+      <div class="social">
         <b class="social__title">Давайте дружить!</b>
         <ul class="social__list">
           <li class="social__item">
@@ -194,7 +194,7 @@
           </li>
         </ul>
       </div>
-      <div class="page-footer__copyright copyright">
+      <div class="copyright">
         <b class="copyright__text">HTML Academy</b>
         <span class="copyright__image" />
       </div>

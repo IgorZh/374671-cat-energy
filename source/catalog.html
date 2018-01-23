@@ -10,7 +10,7 @@
   <header class="catalog-header">
     <a class="logo"
       href="#">
-      <img class="index-header__logo-image"
+      <img class="logo-image"
         src="http://placehold.it/33x38"
         width="33"
         height="38"
@@ -21,13 +21,13 @@
       <button class="main-nav__toggle">Открыть меню</button>
       <ul class="main-nav__list">
         <li class="main-nav__item">
-          Главная
+          <a href="index.html">Главная</a>
         </li>
         <li class="main-nav__item">
-          Каталог продукции
+          <a href="catalog.html">Каталог продукции</a>
         </li>
         <li class="main-nav__item">
-          Подбор программы
+          <a href="program.html">Подбор программы</a>
         </li>
       </ul>
     </nav>
@@ -36,7 +36,7 @@
     <header "catalog-main__header">
       <h1>Каталог продукции</h1>
     </header>
-    <section class="products catalog__products">
+    <section class="products catalog-main__products">
       <h2 class="visually-hidden">Продукты</h2>
       <ul class="products__list">
         <li class="products__item">
@@ -61,7 +61,7 @@
               </li>
             </ul>
           </div>
-          <button class="products__order-button button--primary">Заказать</button>
+          <button class="products__order-button button button--primary">Заказать</button>
         </li>
         <li class="products__item">
           <img class="products__image"
@@ -85,7 +85,7 @@
               </li>
             </ul>
           </div>
-          <button class="products__order-button button--primary">Заказать</button>
+          <button class="products__order-button button button--primary">Заказать</button>
         </li>
         <li class="products__item">
           <img class="products__image"
@@ -109,7 +109,7 @@
               </li>
             </ul>
           </div>
-          <button class="products__order-button button--primary--primary">Заказать</button>
+          <button class="products__order-button button button--primary--primary">Заказать</button>
         </li>
         <li class="products__item">
           <img class="products__image"
@@ -133,7 +133,7 @@
               </li>
             </ul>
           </div>
-          <button class="products__order-button button--primary">Заказать</button>
+          <button class="products__order-button button button--primary">Заказать</button>
         </li>
         <li class="products__item">
           <img class="products__image"
@@ -157,7 +157,7 @@
               </li>
             </ul>
           </div>
-          <button class="products__order-button button--primary">Заказать</button>
+          <button class="products__order-button button button--primary">Заказать</button>
         </li>
         <li class="products__item">
           <img class="products__image"
@@ -181,7 +181,7 @@
               </li>
             </ul>
           </div>
-          <button class="products__order-button button--primary">Заказать</button>
+          <button class="products__order-button button button--primary">Заказать</button>
         </li>
         <li class="products__item">
           <img class="products__image"
@@ -205,13 +205,13 @@
               </li>
             </ul>
           </div>
-          <button class="products__order-button button--primary">Заказать</button>
+          <button class="products__order-button button button--primary">Заказать</button>
         </li>
       </ul>
       <div class="more products__more">
-        <span class="more__icon icon" />
-        <b class="more__title">Показать еще 100500 товаров</b>
-        <span class="more__description">На самом деле вкусов гораздо больше!</span>
+        <div class="more__icon icon" />
+        <div class="more__title">Показать еще 100500 товаров</div>
+        <div class="more__description">На самом деле вкусов гораздо больше!</div>
         <button class="more__button button">Показать все</button>
       </div>
     </section>
@@ -228,7 +228,7 @@
               </li>
             </ul>
           </div>
-          <button class="additional__order-button button--primary">Заказать</button>
+          <button class="additional__order-button button button--primary">Заказать</button>
         </li>
         <li class="additional__item">
           <h3 class="additional__title">Питьевая вода</h3>
@@ -240,7 +240,7 @@
               </li>
             </ul>
           </div>
-          <button class="additional__order-button button--primary">Заказать</button>
+          <button class="additional__order-button button button--primary">Заказать</button>
         </li>
         <li class="additional__item">
           <h3 class="additional__title">Молоко</h3>
@@ -252,7 +252,7 @@
               </li>
             </ul>
           </div>
-          <button class="additional__order-button button--primary">Заказать</button>
+          <button class="additional__order-button button button--primary">Заказать</button>
         </li>
         <li class="additional__item">
           <h3 class="additional__title">Витамины</h3>
@@ -264,15 +264,15 @@
               </li>
             </ul>
           </div>
-          <button class="additional__order-button button--primary">Заказать</button>
+          <button class="additional__order-button button button--primary">Заказать</button>
         </li>
       </ul>
     </section>
-    <section class="catalog__promo promo">
-      <h2 class="visualy-hidden">Ромоакция</h2>
+    <section class="catalog-main__promo promo">
+      <h2 class="visualy-hidden">Промоакция</h2>
       <a href="#">Заказать все</a>
-      <span class="promo__icon--present" />
-      <span class="promo__description">Закажите все и получите чехол для кота в подарок!</span>
+      <div class="promo__icon promo__icon--present" />
+      <div class="promo__description">Закажите все и получите чехол для кота в подарок!</div>
     </section>
     <footer class="catalog-footer">
       <div class="contacts">
@@ -283,8 +283,8 @@
           приглашаем к сотрудничеству дилеров!
         </p>
       </div>
-      <div class="map" />
-      <div class="index-footer__social social">
+      <div class="map"></div>
+      <div class="social">
         <b class="social__title">Давайте дружить!</b>
         <ul class="social__list">
           <li class="social__item">
@@ -301,7 +301,7 @@
           </li>
         </ul>
       </div>
-      <div class="page-footer__copyright copyright">
+      <div class="copyright">
         <b class="copyright__text">HTML Academy</b>
         <span class="copyright__image" />
       </div>
