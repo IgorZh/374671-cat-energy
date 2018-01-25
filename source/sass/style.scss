@@ -1,10 +1,48 @@
+@import "blocks/button.scss";
+@import "blocks/list.scss";
+@import "blocks/text.scss";
+@import "blocks/header.scss";
+@import "blocks/menu-toggle.scss";
+@import "blocks/main-nav.scss";
+@import "blocks/index-main.scss";
+@import "blocks/catalogs.scss";
+@import "blocks/section-title.scss";
+@import "blocks/advantages.scss";
+@import "blocks/example.scss";
+@import "blocks/results.scss";
+@import "blocks/contacts.scss";
+@import "blocks/social.scss";
+@import "blocks/copyright.scss";
+
 @font-face {
   font-family: "Oswald";
-  font-weight: 400;
   src: url("/fonts/oswaldregular.woff2") format("woff2");
   src: url("/fonts/oswaldregular.woff") format("woff");
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: "Oswald";
+  src: url("/fonts/oswaldmedium.woff2") format("woff2");
+  src: url("/fonts/oswaldmedium.woff") format("woff");
+  font-weight: 500;
 }
 
 body {
+  margin: 0;
   font-family: "Oswald", "Arial", sans-serif;
+  font-weight: 400;
+}
+
+.visually-hidden {
+  position: absolute;
+
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+
+  clip: rect(0 0 0 0);
+  overflow: hidden;
 }

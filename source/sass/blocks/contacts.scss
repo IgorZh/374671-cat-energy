@@ -1,0 +1,21 @@
+@import "../vars.scss";
+
+.contacts {
+  padding-top: 33px;
+  padding-bottom: 28px;
+  display: flex;
+  padding-left: $padding-interval;
+  padding-right: $padding-interval;
+}
+
+.contacts__slogan {
+  margin: 0;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 20px;
+  text-transform: uppercase;
+}
+
+.contacts__address {
+  margin: 0;
+}
