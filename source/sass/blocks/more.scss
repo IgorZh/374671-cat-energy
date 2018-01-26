@@ -1,0 +1,29 @@
+@import "../vars.scss";
+
+.more {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.more__title {
+  color: #111111;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 20px;
+  text-transform: uppercase;
+  margin-top: 26px;
+}
+
+.more__description {
+  color: #444444;
+  font-family: $font-text;
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 16px;
+  margin-top: 11px;
+}
+
+.more__button {
+  margin-top: 22px;
+}

@@ -1,0 +1,21 @@
+.promo {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: url("/img/gift-photo-mobile@1x.jpg") no-repeat;
+  background-size: 100% auto;
+}
+
+.promo__icon {
+  margin-top: 65px;
+  margin-bottom: 65px;
+}
+
+.promo__description {
+  margin-bottom: 45px;
+  color: #ffffff;
+  font-family: "Arial";
+  font-size: 16px;
+  font-weight: 400;
+  text-align: center;
+}

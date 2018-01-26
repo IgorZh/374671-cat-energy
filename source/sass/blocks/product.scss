@@ -1,0 +1,15 @@
+@import "../mixins";
+
+.product {
+  @include page-paddings;
+  padding-bottom: 24px;
+}
+
+.product-info {
+  display: flex;
+}
+
+.product__details {
+  padding-top: 20px;
+  width: 100%;
+}

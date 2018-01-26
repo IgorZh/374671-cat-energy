@@ -1,0 +1,16 @@
+@import "../mixins.scss";
+
+.program-main__header {
+  padding-top: 30px;
+
+  @include page-paddings;
+}
+
+.program-main__description {
+  color: #111111;
+  font-weight: 400;
+  line-height: 18px;
+  text-transform: uppercase;
+  margin-top: 35px;
+  padding-right: 50px;
+}

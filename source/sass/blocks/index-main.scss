@@ -1,11 +1,31 @@
 @import "../vars.scss";
+@import "../mixins.scss";
 
 .index-main__header {
   padding-top: 29px;
-  padding-left: $padding-interval;
-  padding-right: $padding-interval;
   background: url("/img/index-background-mobile@1x.jpg") no-repeat;
   background-size: 100% auto;
+
+  @include page-paddings;
+}
+
+.index-main__catalogs {
+  margin-top: 22px;
+
+  @include page-paddings;
+}
+
+.index-main__advantages {
+  padding-top: 20px;
+
+  @include page-paddings;
+}
+
+.index-main__example {
+  background-color: $color-grey;
+  padding-left: $padding-interval;
+  padding-right: $padding-interval;
+  padding-top: 25px;
 }
 
 .index-main__title {

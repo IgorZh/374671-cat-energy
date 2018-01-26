@@ -1,0 +1,15 @@
+@import "../mixins";
+
+.catalog-main__title {
+  margin-top: 31px;
+  margin-bottom: 35px;
+
+  @include page-paddings;
+}
+
+.catalog-main__promo {
+  margin-top: 39px;
+  margin-bottom: 35px;
+
+  @include page-paddings;
+}

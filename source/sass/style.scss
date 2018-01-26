@@ -1,11 +1,13 @@
 @import "blocks/button.scss";
 @import "blocks/list.scss";
 @import "blocks/text.scss";
+@import "blocks/sub-section-title.scss";
 @import "blocks/header.scss";
 @import "blocks/menu-toggle.scss";
 @import "blocks/main-nav.scss";
 @import "blocks/index-main.scss";
-@import "blocks/catalogs.scss";
+@import "blocks/index-footer.scss";
+@import "blocks/catalog-preview.scss";
 @import "blocks/section-title.scss";
 @import "blocks/advantages.scss";
 @import "blocks/example.scss";
@@ -13,6 +15,21 @@
 @import "blocks/contacts.scss";
 @import "blocks/social.scss";
 @import "blocks/copyright.scss";
+@import "blocks/products.scss";
+@import "blocks/product.scss";
+@import "blocks/details.scss";
+@import "blocks/catalog-main.scss";
+@import "blocks/more.scss";
+@import "blocks/additional.scss";
+@import "blocks/promo.scss";
+@import "blocks/catalog-footer.scss";
+@import "blocks/program-main.scss";
+@import "blocks/personal.scss";
+@import "blocks/form-field.scss";
+@import "blocks/form-block.scss";
+@import "blocks/program-form.scss";
+@import "blocks/program-footer.scss";
+@import "blocks/owner.scss";
 
 @font-face {
   font-family: "Oswald";
@@ -31,6 +48,7 @@
 body {
   margin: 0;
   font-family: "Oswald", "Arial", sans-serif;
+  font-size: 14px;
   font-weight: 400;
 }
 

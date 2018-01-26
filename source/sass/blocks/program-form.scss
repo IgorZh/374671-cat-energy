@@ -1,0 +1,17 @@
+@import "../mixins.scss";
+
+.program-form {
+  padding-top: 18px;
+  padding-bottom: 34px;
+}
+
+.program-form__footer {
+  padding-top: 34px;
+  text-align: center;
+}
+
+.program-form__legend {
+  @include remove-margins;
+
+  margin-top: 24px;
+}
