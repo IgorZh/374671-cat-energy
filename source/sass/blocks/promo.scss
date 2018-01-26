@@ -1,3 +1,5 @@
+@import "../vars.scss";
+
 .promo {
   display: flex;
   flex-direction: column;
@@ -14,7 +16,7 @@
 .promo__description {
   margin-bottom: 45px;
   color: #ffffff;
-  font-family: "Arial";
+  font-family: $font-text;
   font-size: 16px;
   font-weight: 400;
   text-align: center;
