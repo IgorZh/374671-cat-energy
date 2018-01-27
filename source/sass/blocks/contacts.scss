@@ -1,9 +1,8 @@
-@import "../mixins.scss";
-
 .contacts {
   padding-top: 33px;
   padding-bottom: 28px;
   display: flex;
+  justify-content: space-between;
 }
 
 .contacts__slogan {
