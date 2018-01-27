@@ -1,0 +1,32 @@
+.form-field {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+
+  &:not(:first-of-type) {
+    margin-top: 14px;
+  }
+}
+
+.form-field__label {
+  margin-right: 15px;
+
+  color: #222222;
+  font-size: 16px;
+  text-transform: uppercase;
+}
+
+.form-field__label--required::after {
+  content: "*";
+}
+
+.form-field__input {
+  flex-grow: 1;
+  padding: 15px 0 15px 16px;
+
+  font-family: $font-main;
+  font-size: 16px;
+  text-transform: uppercase;
+
+  border: 1px solid #cdcdcd;
+}

@@ -1,0 +1,7 @@
+.program-footer__contacts,
+.program-footer__social,
+.program-footer__copyright {
+  background-color: $color-grey;
+
+  @include page-paddings;
+}

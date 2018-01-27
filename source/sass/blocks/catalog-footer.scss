@@ -1,0 +1,7 @@
+.catalog-footer__contacts,
+.catalog-footer__social,
+.catalog-footer__copyright {
+  background-color: $color-grey;
+
+  @include page-paddings;
+}

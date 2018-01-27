@@ -1,0 +1,57 @@
+.index-main__header {
+  padding-top: 29px;
+  background: url("/img/index-background-mobile@1x.jpg") no-repeat;
+  background-size: 100% auto;
+
+  @include page-paddings;
+}
+
+.index-main__catalogs {
+  margin-top: 22px;
+
+  @include page-paddings;
+}
+
+.index-main__advantages {
+  padding-top: 20px;
+
+  @include page-paddings;
+}
+
+.index-main__example {
+  background-color: $color-grey;
+  padding-left: $padding-interval;
+  padding-right: $padding-interval;
+  padding-top: 25px;
+}
+
+.index-main__title {
+  color: #ffffff;
+  font-size: 36px;
+  font-weight: 400;
+  line-height: 36px;
+  text-align: center;
+}
+
+.index-main__slogan {
+  color: #ffffff;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 14px;
+  text-transform: uppercase;
+  text-align: center;
+  margin-top: 19px;
+}
+
+.index-main__logo {
+  display: block;
+  margin-top: 29px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.index-main__to-choose {
+  font-size: 14px;
+  display: block;
+  box-sizing: border-box;
+}

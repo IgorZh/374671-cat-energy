@@ -1,0 +1,21 @@
+.social {
+  display: flex;
+  flex-direction: column;
+}
+
+.social__list {
+  display: flex;
+  flex-direction: row;
+  padding-top: 24px;
+  padding-bottom: 24px;
+
+  @include grey-border-bottom;
+}
+
+.social__logo {
+  padding-top: 39px;
+  padding-bottom: 31px;
+  text-align: center;
+
+  @include grey-border-bottom;
+}

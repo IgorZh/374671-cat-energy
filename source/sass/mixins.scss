@@ -1,0 +1,14 @@
+@import "./vars.scss";
+
+@mixin page-paddings {
+  padding-left: $padding-interval;
+  padding-right: $padding-interval;
+}
+
+@mixin remove-margins {
+  margin: 0;
+}
+
+@mixin grey-border-bottom {
+  border-bottom: 1px solid #d9d9d9;
+}

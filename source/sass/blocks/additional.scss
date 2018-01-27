@@ -1,0 +1,16 @@
+.additional {
+  @include page-paddings;
+}
+
+.additional__item {
+  padding-top: 14px;
+  padding-bottom: 17px;
+}
+
+.additional__order-button {
+  margin-top: 16px;
+}
+
+.additional__title {
+  margin-bottom: 15px;
+}
