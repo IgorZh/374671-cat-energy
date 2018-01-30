@@ -1,15 +1,5 @@
 .index-footer__social,
-.index-footer__copyright {
+.index-footer__copyright,
+.index-footer__logo {
   background-color: $color-grey;
-
-  @include page-paddings;
-}
-
-.index-footer__contacts {
-  @include page-paddings;
-}
-
-.index-footer__copyright {
-  padding-top: 22px;
-  padding-bottom: 22px;
 }

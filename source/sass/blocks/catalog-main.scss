@@ -2,12 +2,12 @@
   margin-top: 31px;
   margin-bottom: 35px;
 
-  @include page-paddings;
+  @include page-paddings-mobile;
 }
 
 .catalog-main__promo {
   margin-top: 39px;
   margin-bottom: 35px;
 
-  @include page-paddings;
+  @include page-paddings-mobile;
 }

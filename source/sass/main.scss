@@ -13,6 +13,7 @@
 }
 
 body {
+  min-width: $mobile-width;
   margin: 0;
   font-family: "Oswald", "Arial", sans-serif;
   font-size: 14px;

@@ -1,5 +1,5 @@
 .form-block {
-  @include page-paddings;
+  @include page-paddings-mobile;
 
   &--bordered {
     padding-top: 21px;

@@ -1,8 +1,33 @@
 @import "./vars.scss";
 
-@mixin page-paddings {
-  padding-left: $padding-interval;
-  padding-right: $padding-interval;
+@mixin page-paddings-mobile {
+  padding-left: $padding-interval-mobile;
+  padding-right: $padding-interval-mobile;
+}
+
+@mixin page-paddings-tablet {
+  padding-left: $padding-interval-tablet;
+  padding-right: $padding-interval-tablet;
+}
+
+@mixin page-paddings-desktop {
+  padding-left: $padding-interval-desktop;
+  padding-right: $padding-interval-desktop;
+}
+
+@mixin full-width-mobile {
+  margin-left: -$padding-interval-mobile;
+  margin-right: -$padding-interval-mobile;
+}
+
+@mixin full-width-tablet {
+  margin-left: -$padding-interval-tablet;
+  margin-right: -$padding-interval-tablet;
+}
+
+@mixin full-width-desktop {
+  margin-left: -$padding-interval-desktop;
+  margin-right: -$padding-interval-desktop;
 }
 
 @mixin remove-margins {

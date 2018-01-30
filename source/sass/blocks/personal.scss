@@ -1,6 +1,6 @@
 .personal {
   padding-bottom: 23px;
 
-  @include page-paddings;
+  @include page-paddings-mobile;
   @include grey-border-bottom;
 }
