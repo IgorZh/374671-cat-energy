@@ -1,15 +1,11 @@
-.owner__title {
-  padding-right: 100px;
-}
-
 @media (min-width: $tablet-width) {
-  .owner__wrapper {
+  .add-goods__wrapper {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
   }
 
-  .owner__item {
-    width: 570px;
+  .add-goods__item {
+    width: 300px;
   }
 }

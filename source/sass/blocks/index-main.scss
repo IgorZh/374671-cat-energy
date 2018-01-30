@@ -15,3 +15,17 @@
 
   @include full-width-mobile;
 }
+
+@media (min-width: $tablet-width) {
+  .index-main__example {
+    @include page-paddings-tablet;
+    @include full-width-tablet;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .index-main__example {
+    @include page-paddings-desktop;
+    @include full-width-desktop;
+  }
+}

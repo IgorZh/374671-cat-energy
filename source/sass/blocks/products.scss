@@ -13,3 +13,31 @@
 
   @include page-paddings-mobile;
 }
+
+@media (min-width: $tablet-width) {
+  .products__list {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+
+  .products__item {
+    width: 324px;
+
+    border-bottom: none;
+
+    &:first-child {
+      border-top: none;
+    }
+  }
+
+  .products__more {
+    border-bottom: none;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .products__item {
+    width: 245px;
+  }
+}

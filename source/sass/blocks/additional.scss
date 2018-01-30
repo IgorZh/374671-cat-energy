@@ -14,3 +14,17 @@
 .additional__title {
   margin-bottom: 15px;
 }
+
+@media (min-width: $desktop-width) {
+  .additional__wrapper {
+    display: flex;
+  }
+
+  .additional__item {
+    display: flex;
+  }
+
+  .additional__list {
+    flex-grow: 1;
+  }
+}

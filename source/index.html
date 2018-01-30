@@ -64,10 +64,10 @@
       </div>
     </header>
     <main class="index-main">
-      <section class="index-main__catalogs">
+      <section class="index-main__catalogs catalogs">
         <h2 class="visually-hidden">Программы питания</h2>
-        <ul class="list">
-          <li class="catalog-preview">
+        <ul class="catalogs__list list">
+          <li class="catalog-preview catalogs__item">
             <div class="catalog-preview__title-wrapper">
               <img class="catalog-preview__image"
                 src="http://placehold.it/50x51"
@@ -86,7 +86,7 @@
                 height="11" />
             </a>
           </li>
-          <li class="catalog-preview">
+          <li class="catalog-preview catalogs__item">
             <div class="catalog-preview__title-wrapper">
               <img class="catalog-preview__image"
                 src="http://placehold.it/50x51"
@@ -147,27 +147,29 @@
           </li>
         </ul>
       </section>
-      <section class="index-main__example">
-        <h2 class="section-title">
-          Живой пример
-        </h2>
-        <p class="example__description text">Борис сбросил 5 кг за 2 месяца, просто заменив свой обычный корм на Cat Energy Slim. Отличный результат без изнуряющих
-          тренировок! При этом он не менял своих привычек и по-прежнему спит по 16 часов в день.
-        </p>
-        <div class="results example-result">
-          <ul class="results__list list">
-            <li class="results__item">
-              <p class="results__value">5 КГ</p>
-              <p class="results__parameter text">снижение веса</p>
-            </li>
-            <li class="results__item">
-              <p class="results__value">60 дней</p>
-              <p class="results__parameter text">затрачено времени</p>
-            </li>
-          </ul>
-        </div>
-        <div class="example__cost text">
-          Затраты на питание: 15 000 руб.
+      <section class="example index-main__example">
+        <div class="example__wrapper">
+          <h2 class="section-title">
+            Живой пример
+          </h2>
+          <p class="example__description text">Борис сбросил 5 кг за 2 месяца, просто заменив свой обычный корм на Cat Energy Slim. Отличный результат без изнуряющих
+            тренировок! При этом он не менял своих привычек и по-прежнему спит по 16 часов в день.
+          </p>
+          <div class="results example-result">
+            <ul class="results__list list">
+              <li class="results__item">
+                <p class="results__value">5 КГ</p>
+                <p class="results__parameter text">снижение веса</p>
+              </li>
+              <li class="results__item">
+                <p class="results__value">60 дней</p>
+                <p class="results__parameter text">затрачено времени</p>
+              </li>
+            </ul>
+          </div>
+          <div class="example__cost text">
+            Затраты на питание: 15 000 руб.
+          </div>
         </div>
         <img class="example__image example__image--before"
           src="/img/before-mobile@1x.png"
@@ -191,7 +193,8 @@
         </p>
       </div>
       <div class="map footer__map index-footer__map">
-        <iframe class="footer__map-iframe" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2212.3079635505387!2d43.99843231608457!3d56.324515955219546!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4151d449157d25a7%3A0xa8d4a5dea0e0d4b8!2z0KLQtdCw0YLRgNCw0LvRjNC90LDRjyDQn9C70L7RidCw0LTRjA!5e0!3m2!1sru!2sru!4v1516825124802"
+        <iframe class="footer__map-iframe"
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2212.3079635505387!2d43.99843231608457!3d56.324515955219546!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4151d449157d25a7%3A0xa8d4a5dea0e0d4b8!2z0KLQtdCw0YLRgNCw0LvRjNC90LDRjyDQn9C70L7RidCw0LTRjA!5e0!3m2!1sru!2sru!4v1516825124802"
           width="100%"
           frameborder="0"
           style="border:0"
@@ -207,15 +210,30 @@
           <ul class="social__list list">
             <li class="social__item">
               <a class="social__link social__link--vkontakte"
-                href="https://vk.com/htmlacademy">Мы в Вконтакте</a>
+                href="https://vk.com/htmlacademy"
+                aria-label="Мы в Вконтакте">
+                <img src="http://placehold.it/22x12"
+                  width="22"
+                  height="12" />
+              </a>
             </li>
             <li class="social__item">
               <a class="social__link social__link--instagram"
-                href="https://www.instagram.com/htmlacademy">Мы в Инстаграме</a>
+                href="https://www.instagram.com/htmlacademy"
+                aria-label="Мы в Инстаграме">
+                <img src="http://placehold.it/16x16"
+                  width="16"
+                  height="16" />
+              </a>
             </li>
             <li class="social__item">
               <a class="social__link social__link--facebook"
-                href="https://www.facebook.com/htmlacademy">Мы в Фейсбуке</a>
+                href="https://www.facebook.com/htmlacademy"
+                aria-label="Мы в Фейсбуке">
+                <img src="http://placehold.it/10x19"
+                  width="10"
+                  height="19" />
+              </a>
             </li>
           </ul>
         </div>

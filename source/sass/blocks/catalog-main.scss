@@ -1,13 +1,14 @@
 .catalog-main__title {
   margin-top: 31px;
   margin-bottom: 35px;
-
-  @include page-paddings-mobile;
 }
 
 .catalog-main__promo {
   margin-top: 39px;
   margin-bottom: 35px;
+}
 
-  @include page-paddings-mobile;
+.catalog-main__products,
+.catalog-main__additional {
+  @include full-width-mobile;
 }
