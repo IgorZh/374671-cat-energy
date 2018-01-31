@@ -1,6 +1,9 @@
-.footer__map,
-.footer__contacts {
+.footer__map {
   @include full-width-mobile;
+}
+
+.footer__contacts {
+  @include page-paddings-mobile;
 }
 
 .footer__logo {
@@ -39,9 +42,12 @@
     @include full-width-tablet;
   }
 
-  .footer__map,
-  .footer__contacts {
+  .footer__map {
     @include full-width-tablet;
+  }
+
+  .footer__contacts {
+    @include page-paddings-tablet;
   }
 
   .footer__logo,
@@ -60,8 +66,29 @@
     @include full-width-desktop;
   }
 
-  .footer__map,
-  .footer__contacts {
+  .footer__map-iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: -1;
+  }
+
+  .footer__map {
+    position: relative;
+
+    padding-top: 100px;
+    min-height: 300px;
+
     @include full-width-desktop;
+  }
+
+  .footer__contacts {
+    z-index: 11;
+    background: #ffffff;
+    height: 133px;
+    width: 500px;
+    margin-left: 100px;
   }
 }
