@@ -13,3 +13,19 @@
 
   margin-top: 24px;
 }
+
+@media (min-width: $tablet-width) {
+  .program-form__footer {
+    display: flex;
+  }
+
+  .program-form__wrapper {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .program-form__personal-data,
+  .program-form__aims {
+    width: 570px;
+  }
+}

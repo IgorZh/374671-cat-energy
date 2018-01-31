@@ -10,3 +10,9 @@
 .example__image {
   margin-top: 44px;
 }
+
+@media (min-width: $desktop-width) {
+  .example {
+    display: flex;
+  }
+}

@@ -3,5 +3,5 @@
 .program-footer__copyright {
   background-color: $color-grey;
 
-  @include page-paddings;
+  @include page-paddings-mobile;
 }

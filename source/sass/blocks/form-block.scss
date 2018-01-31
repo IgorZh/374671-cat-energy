@@ -1,10 +1,10 @@
 .form-block {
-  @include page-paddings;
-
   &--bordered {
     padding-top: 21px;
     padding-bottom: 23px;
 
     @include grey-border-bottom;
+    @include page-paddings-mobile;
+    @include full-width-mobile;
   }
 }

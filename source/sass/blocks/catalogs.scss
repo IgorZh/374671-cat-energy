@@ -1,0 +1,15 @@
+@media (min-width: $desktop-width) {
+  .catalogs__list {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  .catalogs__item {
+    width: 570px;
+
+    &:not(:first-child) {
+      margin-left: 80px;
+    }
+  }
+}

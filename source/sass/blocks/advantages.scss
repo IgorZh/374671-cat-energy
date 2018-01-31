@@ -13,3 +13,26 @@
   margin-bottom: 0;
   margin-left: 20px;
 }
+
+@media (min-width: $tablet-width) {
+  .advantages__list {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+
+  .advantages__item {
+    width: 40%;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .advantages__list {
+    flex-wrap: nowrap;
+  }
+
+  .advantages__item {
+    width: 240px;
+  }
+}

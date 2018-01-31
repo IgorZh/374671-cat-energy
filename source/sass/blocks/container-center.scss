@@ -1,0 +1,21 @@
+.container-center {
+  width: $mobile-width - 2 * $padding-interval-mobile;
+  margin: 0 auto;
+  padding: 0 $padding-interval-mobile;
+}
+
+@media (min-width: $tablet-width) {
+  .container-center {
+    width: $tablet-width - 2 * $padding-interval-tablet;
+    margin: 0 auto;
+    padding: 0 $padding-interval-tablet;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .container-center {
+    width: $desktop-width - 2 * $padding-interval-desktop;
+    margin: 0 auto;
+    padding: 0 $padding-interval-desktop;
+  }
+}
