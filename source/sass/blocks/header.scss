@@ -2,6 +2,8 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
+  padding-top: 11px;
+  padding-bottom: 12px;
 }
 
 @media (min-width: $tablet-width) {
@@ -11,6 +13,12 @@
 
   .header__wrapper {
     flex-grow: 1;
+    padding: 0;
+  }
+
+  .header__logo {
+    height: 58px;
+    width: 173px;
   }
 
   .header__title,
@@ -25,7 +33,7 @@
     padding-top: 54px;
 
     background: url("/img/index-background-mobile@1x.jpg") no-repeat;
-    background-size: auto 100%;
+    background-size: 680px 696px;
     background-position: right;
 
     @include page-paddings-desktop;

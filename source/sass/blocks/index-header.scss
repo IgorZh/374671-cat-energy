@@ -1,15 +1,10 @@
 .index-header {
-  margin-bottom: 70px;
-}
-
-.index-header__wrapper {
-  height: 305px;
   padding-top: 29px;
+
+  text-align: center;
 
   background: url("/img/index-background-mobile@1x.jpg") no-repeat;
   background-size: 100% auto;
-
-  text-align: center;
 
   @include full-width-mobile;
   @include page-paddings-mobile;
@@ -35,16 +30,11 @@
 }
 
 .index-header__logo {
-  display: block;
-  margin-top: -170px;
-  margin-left: auto;
-  margin-right: auto;
+  margin-top: 29px;
 }
 
 .index-header__to-choose {
   display: block;
-  box-sizing: border-box;
-  margin-top: 300px;
 
   font-size: 14px;
 }
@@ -54,12 +44,18 @@
     display: flex;
     flex-direction: column;
     padding-left: 90px;
+
+    text-align: left;
+
+    background: none;
   }
 
   .index-header__wrapper {
+    display: flex;
+    flex-direction: column;
+    padding-left: 90px;
     padding-top: 62px;
     height: auto;
-    z-index: 100;
 
     text-align: left;
 
@@ -85,13 +81,17 @@
   }
 
   .index-header__logo {
-
+    order: 2;
     margin-top: -75px;
+    margin-left: -90px;
+    width: 709px;
+    height: 609px;
   }
 
   .index-header__to-choose {
     z-index: 100;
 
+    order: 1;
     width: 245px;
     margin-top: 44px;
 
@@ -102,15 +102,23 @@
 
 @media (min-width: $desktop-width) {
   .index-header {
+    position: relative;
+
     padding-left: 83px;
+    width: 420px;
+    height: 550px;
   }
 
   .index-header__title {
-    padding-right: 600px;
+    padding-right: 0;
   }
 
   .index-header__logo {
+    position: absolute;
 
-    margin-top: -75px;
+    left: 100%;
+    margin: 0;
+    width: 552px;
+    height: 499px;
   }
 }

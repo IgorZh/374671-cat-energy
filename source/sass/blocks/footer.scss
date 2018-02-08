@@ -1,4 +1,6 @@
 .footer__map {
+  margin-bottom: -4px;
+
   @include full-width-mobile;
 }
 
@@ -7,6 +9,7 @@
 }
 
 .footer__logo {
+  display: block;
   padding-top: 39px;
   padding-bottom: 31px;
   text-align: center;
@@ -37,6 +40,8 @@
   .footer__wrapper {
     display: flex;
     justify-content: space-between;
+    padding-top: 64px;
+    padding-bottom: 48px;
 
     @include page-paddings-tablet;
     @include full-width-tablet;
@@ -51,7 +56,9 @@
   }
 
   .footer__logo,
-  .footer__social {
+  .footer__social,
+  .footer__copyright {
+    padding: 0;
     border-bottom: none;
   }
 
@@ -87,8 +94,8 @@
   .footer__contacts {
     z-index: 11;
     background: #ffffff;
-    height: 133px;
-    width: 500px;
-    margin-left: 100px;
+    height: 70px;
+    width: 494px;
+    margin-left: 110px;
   }
 }

@@ -11,3 +11,19 @@
     margin-left: 40px;
   }
 }
+
+.social__link {
+  &:hover {
+    opacity: 0.8;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .social__list {
+    padding: 0;
+  }
+}
