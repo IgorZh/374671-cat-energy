@@ -20,7 +20,7 @@
 }
 
 .index-header__slogan {
-  margin-top: 19px;
+  margin-top: 24px;
 
   color: #ffffff;
   font-size: 14px;
@@ -43,7 +43,8 @@
   .index-header {
     display: flex;
     flex-direction: column;
-    padding-left: 90px;
+    padding-left: 107px;
+    padding-top: 57px;
 
     text-align: left;
 
@@ -73,7 +74,7 @@
   }
 
   .index-header__slogan {
-    margin-top: 33px;
+    margin-top: 40px;
 
     color: inherit;
     font-size: 20px;
@@ -83,7 +84,7 @@
   .index-header__logo {
     order: 2;
     margin-top: -75px;
-    margin-left: -90px;
+    margin-left: -26px;
     width: 709px;
     height: 609px;
   }
@@ -104,9 +105,10 @@
   .index-header {
     position: relative;
 
-    padding-left: 83px;
+    padding-left: 100px;
+    padding-top: 109px;
     width: 420px;
-    height: 550px;
+    height: 475px;
   }
 
   .index-header__title {
@@ -117,8 +119,13 @@
     position: absolute;
 
     left: 100%;
-    margin: 0;
+    margin-top: -80px;
+    margin-left: -40px;
     width: 552px;
     height: 499px;
+  }
+
+  .index-header__to-choose {
+    margin-top: 53px;
   }
 }

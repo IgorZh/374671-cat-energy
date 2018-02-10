@@ -14,14 +14,14 @@
   .header__wrapper {
     flex-grow: 1;
     padding: 0;
+    justify-content: flex-start;
   }
 
   .header__logo {
     height: 58px;
-    width: 173px;
+    width: 86px;
   }
 
-  .header__title,
   .header__button {
     display: none;
   }

@@ -1,9 +1,3 @@
-@media (min-width: $tablet-width) {
-  .catalogs__item {
-    padding: 78px 309px 62px 55px;
-  }
-}
-
 @media (min-width: $desktop-width) {
   .catalogs__list {
     display: flex;
@@ -12,11 +6,6 @@
   }
 
   .catalogs__item {
-    width: 570px;
-    padding: 47px 54px 62px 52px;
-
-    &:not(:first-child) {
-      margin-left: 80px;
-    }
+    flex-basis: 570px;
   }
 }

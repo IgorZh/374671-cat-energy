@@ -1,19 +1,33 @@
 .example__description {
-  margin-top: 30px;
+  margin-top: 28px;
+  margin-bottom: 25px;
+  padding-right: 1px;
 }
 
 .example__image-wrapper {
-  margin-top: 31px;
+  margin-top: 41px;
+}
+
+.example__image {
+  margin-left: -20px;
 }
 
 .example__slider {
   margin-top: 30px;
 }
 
+.example__title {
+  margin-top: 15px;
+}
+
 @media (min-width: $tablet-width) {
   .example__description {
-    margin-top: 42px;
-    margin-bottom: 50px;
+    margin-top: 54px;
+    margin-bottom: 53px;
+  }
+
+  .example__title {
+    margin-top: 4px;
   }
 
   .example__image-wrapper {
@@ -26,13 +40,14 @@
 
   .example__image {
     margin-top: -152px;
+    margin-left: 18px;
     height: 499px;
     width: 677px;
   }
 
   .example__slider {
     margin-top: 0;
-    padding-top: 30px;
+    padding-top: 8px;
     padding-bottom: 68px;
 
     @include page-paddings-tablet;
@@ -48,20 +63,42 @@
 
   .example__image {
     margin-top: -188px;
+    margin-left: -18px;
   }
 
   .example__wrapper {
-    padding-right: 190px;
+    flex-basis: 437px;
+    flex-grow: 1;
+    flex-shrink: 0;
+    padding-right: 42px;
   }
 
   .example__image-wrapper {
-    width: 790px;
-    margin-right: -$padding-interval-desktop;
-    margin-top: 144px;
+    flex-basis: 540px;
+    flex-grow: 1;
+    flex-shrink: 0;
+    margin-right: -53px;
+    margin-top: 162px;
+
+    @include page-paddings-desktop;
+    @include full-width-desktop;
+
+    margin-left: 0;
   }
 
   .example__description {
     margin-top: 136px;
     margin-bottom: 67px;
+  }
+
+  .example__slider {
+    margin-top: 0;
+    padding-top: 31px;
+    padding-bottom: 68px;
+
+    @include page-paddings-desktop;
+    @include full-width-desktop;
+
+    padding-right: 82px;
   }
 }

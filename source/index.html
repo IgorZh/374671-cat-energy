@@ -12,7 +12,7 @@
 <body>
   <div class="container-center">
     <header class="header">
-      <nav class="main-nav">
+      <nav class="main-nav main-nav--close">
         <div class="header__wrapper">
           <a class="logo header__logo">
             <img src="/img/icon-logo-mobile.svg"
@@ -28,13 +28,13 @@
           <button class="menu-toggle header__button"
             aria-label="Открыть/Закрыть меню">
             <img src="/img/icon-mobile-menu.svg"
-              width="18"
+              width="24"
               height="18" />
           </button>
         </div>
         <ul class="main-nav__list list">
           <li class="main-nav__item">
-            <a class="
+            <a class="main-nav__link
              main-nav__link--active">Главная</a>
           </li>
           <li class="main-nav__item">
@@ -137,7 +137,7 @@
       </section>
       <section class="example index-main__example">
         <div class="example__wrapper">
-          <h2 class="section-title example__title">
+          <h2 class="example__title section-title">
             Живой пример
           </h2>
           <p class="example__description text">Борис сбросил 5 кг за 2 месяца, просто заменив свой обычный корм на Cat Energy Slim. Отличный результат без изнуряющих
@@ -181,7 +181,8 @@
       <div class="map footer__map index-footer__map">
         <div class="contacts footer__contacts index-footer__contacts">
           <p class="contacts__slogan">
-            Приглашаем к сотрудничеству дилеров!
+            Приглашаем
+            <br>к сотрудничеству дилеров!
           </p>
           <p class="contacts__address text">
             ул. Большая Конюшенная, д. 19/8 Санкт-Петербург
@@ -207,7 +208,8 @@
               <a class="social__link"
                 href="https://vk.com/htmlacademy"
                 aria-label="Мы в Вконтакте">
-                <img src="/img/icon-vk-mobile.svg"
+                <img class="social__image--vk"
+                  src="/img/icon-vk-mobile.svg"
                   width="22"
                   height="12" />
               </a>
@@ -216,7 +218,8 @@
               <a class="social__link"
                 href="https://www.instagram.com/htmlacademy"
                 aria-label="Мы в Инстаграме">
-                <img src="/img/icon-insta-mobile.svg"
+                <img class="social__image--insta"
+                  src="/img/icon-insta-mobile.svg"
                   width="16"
                   height="16" />
               </a>
@@ -225,7 +228,8 @@
               <a class="social__link"
                 href="https://www.facebook.com/htmlacademy"
                 aria-label="Мы в Фейсбуке">
-                <img src="/img/icon-fb-mobile.svg"
+                <img class="social__image--fb"
+                  src="/img/icon-fb-mobile.svg"
                   width="10"
                   height="19" />
               </a>
