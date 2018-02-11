@@ -12,16 +12,16 @@
 <body>
   <div class="container-center">
     <header class="header catalog-header">
-      <nav class="main-nav">
+      <nav class="main-nav main-nav--close">
         <div class="header__wrapper">
-          <a class="header__logo"
+          <a class="logo header__logo"
             href="index.html">
             <img src="/img/icon-logo-mobile.svg"
               width="33"
               height="38"
               alt="Cat energy logo" />
           </a>
-          <a class="header__title"
+          <a class="logo header__title"
             href="index.html">
             <img src="/img/logo-mobile-header.svg"
               width="101"
@@ -30,7 +30,7 @@
           <button class="menu-toggle header__button"
             aria-label="Открыть/Закрыть меню">
             <img src="/img/icon-mobile-menu.svg"
-              width="18"
+              width="24"
               height="18" />
           </button>
         </div>
@@ -55,8 +55,8 @@
         <h2 class="visually-hidden">Продукты</h2>
         <ul class="products__list list">
           <li class="products__item product">
-            <div class="product-info">
-              <img class="product__image"
+            <div class="product__info">
+              <img class="product__image products__image"
                 src="/img/chicken-small-mobile@1x.jpg"
                 width="140"
                 height="144" />
@@ -79,11 +79,11 @@
                 </ul>
               </div>
             </div>
-            <button class="product__order-button button button--green">Заказать</button>
+            <button class="products__order-button button button--green">Заказать</button>
           </li>
           <li class="products__item product">
-            <div class="product-info">
-              <img class="products__image"
+            <div class="product__info">
+              <img class="product__image products__image"
                 src="/img/chicken-big-mobile@1x.jpg"
                 width="140"
                 height="144" />
@@ -108,8 +108,8 @@
             <button class="products__order-button button button--green">Заказать</button>
           </li>
           <li class="products__item product">
-            <div class="product-info">
-              <img class="products__image"
+            <div class="product__info">
+              <img class="product__image products__image"
                 src="/img/fish-small-mobile@1x.jpg"
                 width="140"
                 height="144" />
@@ -134,8 +134,8 @@
             <button class="products__order-button button button--green">Заказать</button>
           </li>
           <li class="products__item product">
-            <div class="product-info">
-              <img class="products__image"
+            <div class="product__info">
+              <img class="product__image products__image"
                 src="/img/fish-big-mobile@1x.jpg"
                 width="140"
                 height="144" />
@@ -160,8 +160,8 @@
             <button class="products__order-button button button--green">Заказать</button>
           </li>
           <li class="products__item product">
-            <div class="product-info">
-              <img class="products__image"
+            <div class="product__info">
+              <img class="product__image products__image"
                 src="/img/buckwheat-small-mobile@1x.jpg"
                 width="140"
                 height="144" />
@@ -186,8 +186,8 @@
             <button class="products__order-button button button--green">Заказать</button>
           </li>
           <li class="products__item product">
-            <div class="product-info">
-              <img class="products__image"
+            <div class="product__info">
+              <img class="product__image products__image"
                 src="/img/buckwheat-big-mobile@1x.jpg"
                 width="140"
                 height="144" />
@@ -212,8 +212,8 @@
             <button class="products__order-button button button--green">Заказать</button>
           </li>
           <li class="products__item product">
-            <div class="product-info">
-              <img class="products__image"
+            <div class="product__info">
+              <img class="product__image products__image"
                 src="/img/rice-small-mobile@1x.jpg"
                 width="140"
                 height="144" />
@@ -240,7 +240,7 @@
           <li>
             <div class="more products__more">
               <img class="more__icon icon"
-                src="http://placehold.it/30x30"
+                src="/img/icon-plus-mobile.svg"
                 width="30"
                 height="30" />
               <div class="more__title">Показать еще 100500 товаров</div>
@@ -251,16 +251,18 @@
         </ul>
       </section>
       <section class="additional catalog-main__additional">
-        <h2 class="sub-section-title">Дополнительные товары</h2>
+        <h2 class="sub-section-title">
+          <span class="sub-section-title__text">Дополнительные товары</span>
+        </h2>
         <div class="additional__wrapper">
           <ul class="additional__list list">
             <li class="additional__item list__item--bordered">
               <div class="additional__details details">
                 <h3 class="details__title additional__title">Сахарозаменитель</h3>
-                <ul class="details__list list">
-                  <li class="details__item">
-                    <span class="details__text">1 Упаковка</span>
-                    <span class="details__text">100 Р.</span>
+                <ul class="details__list list additional__details-list">
+                  <li class="details__item additional__details-item">
+                    <span class="details__text additional__text">1 Упаковка (100 г)</span>
+                    <span class="details__text additional__text">100 Р.</span>
                   </li>
                 </ul>
               </div>
@@ -269,10 +271,10 @@
             <li class="additional__item list__item--bordered">
               <div class="additional__details details">
                 <h3 class="details__title additional__title">Питьевая вода</h3>
-                <ul class="details__list list">
-                  <li class="details__item">
-                    <span class="details__text">5 литров</span>
-                    <span class="details__text">50 Р.</span>
+                <ul class="details__list list additional__details-list">
+                  <li class="details__item additional__details-item">
+                    <span class="details__text additional__text">5 литров</span>
+                    <span class="details__text additional__text">50 Р.</span>
                   </li>
                 </ul>
               </div>
@@ -281,10 +283,10 @@
             <li class="additional__item list__item--bordered">
               <div class="additional__details details">
                 <h3 class="details__title additional__title">Молоко</h3>
-                <ul class="details__list list">
-                  <li class="details__item">
-                    <span class="details__text">1 литр</span>
-                    <span class="details__text">100 Р.</span>
+                <ul class="details__list list  additional__details-list">
+                  <li class="details__item additional__details-item">
+                    <span class="details__text additional__text">1 литр</span>
+                    <span class="details__text additional__text">100 Р.</span>
                   </li>
                 </ul>
               </div>
@@ -293,10 +295,10 @@
             <li class="additional__item list__item--bordered">
               <div class="additional__details details">
                 <h3 class="details__title additional__title">Витамины</h3>
-                <ul class="details__list list">
-                  <li class="details__item">
-                    <span class="details__text">1 упаковка (30 г)</span>
-                    <span class="details__text">300 Р.</span>
+                <ul class="details__list list  additional__details-list">
+                  <li class="details__item additional__details-item">
+                    <span class="details__text additional__text">1 упаковка (30 г)</span>
+                    <span class="details__text additional__text">300 Р.</span>
                   </li>
                 </ul>
               </div>
@@ -307,11 +309,11 @@
             <div class="promo">
               <h2 class="visually-hidden">Промоакция</h2>
               <img class="promo__icon promo__icon--present"
-                src="http://placehold.it/55x60"
+                src="/img/icon-gift.svg"
                 width="55"
                 height="60" />
-              <div class="promo__description">Закажите
-                <br>все и получите чехол для
+              <div class="promo__description">Закажите все
+                <br> и получите чехол для
                 <br>кота в подарок!
               </div>
             </div>
@@ -319,16 +321,16 @@
         </div>
       </section>
       <footer class="catalog-footer">
-        <div class="contacts footer__contacts catalog-footer__contacts">
-          <p class="contacts__slogan">
-            Приглашаем
-            <br>к сотрудничеству дилеров!
-          </p>
-          <p class="contacts__address text">
-            ул. Большая Конюшенная, д. 19/8 Санкт-Петербург
-          </p>
-        </div>
         <div class="map footer__map catalog-footer__map">
+          <div class="contacts footer__contacts catalog-footer__contacts">
+            <p class="contacts__slogan">
+              Приглашаем
+              <br>к сотрудничеству дилеров!
+            </p>
+            <p class="contacts__address text">
+              ул. Большая Конюшенная, д. 19/8 Санкт-Петербург
+            </p>
+          </div>
           <iframe class="footer__map-iframe"
             src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2212.3079635505387!2d43.99843231608457!3d56.324515955219546!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4151d449157d25a7%3A0xa8d4a5dea0e0d4b8!2z0KLQtdCw0YLRgNCw0LvRjNC90LDRjyDQn9C70L7RidCw0LTRjA!5e0!3m2!1sru!2sru!4v1516825124802"
         
@@ -338,36 +340,39 @@
             allowfullscreen></iframe>
         </div>
         <div class="footer__wrapper">
-          <div class="footer__logo catalog-footer__logo">
+          <a class="footer__logo catalog-footer__logo logo">
             <img src="/img/logo-mobile-header.svg"
               width="128"
               height="24" />
-          </div>
+          </a>
           <div class="social footer__social catalog-footer__social">
             <ul class="social__list list">
               <li class="social__item">
-                <a class="social__link social__link--vkontakte"
+                <a class="social__link"
                   href="https://vk.com/htmlacademy"
                   aria-label="Мы в Вконтакте">
-                  <img src="/img/icon-vk-mobile.svg"
+                  <img class="social__image--vk"
+                    src="/img/icon-vk-mobile.svg"
                     width="22"
                     height="12" />
                 </a>
               </li>
               <li class="social__item">
-                <a class="social__link social__link--instagram"
+                <a class="social__link"
                   href="https://www.instagram.com/htmlacademy"
                   aria-label="Мы в Инстаграме">
-                  <img src="/img/icon-insta-mobile.svg"
+                  <img class="social__image--insta"
+                    src="/img/icon-insta-mobile.svg"
                     width="16"
                     height="16" />
                 </a>
               </li>
               <li class="social__item">
-                <a class="social__link social__link--facebook"
+                <a class="social__link"
                   href="https://www.facebook.com/htmlacademy"
                   aria-label="Мы в Фейсбуке">
-                  <img src="/img/icon-fb-mobile.svg"
+                  <img class="social__image--fb"
+                    src="/img/icon-fb-mobile.svg"
                     width="10"
                     height="19" />
                 </a>
@@ -375,16 +380,16 @@
             </ul>
           </div>
           <div class="copyright footer__copyright catalog-footer__copyright">
-            <div class="copyright__text">HTML Academy</div>
-            <img class="copyright__logo"
-              src="/img/logo-mobile-header.svg"
-              width="27"
-              height="34" />
+            <a class="copyright__text"
+              href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
+            <a href="https://htmlacademy.ru/intensive/adaptive">
+              <img class="copyright__logo"
+                src="/img/logo-htmlacademy.svg"
+                width="27"
+                height="34" />
+            </a>
           </div>
         </div>
-      </footer>
-    </main>
-  </div>
 </body>
 
 </html>

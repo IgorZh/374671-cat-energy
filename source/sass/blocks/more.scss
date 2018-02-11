@@ -5,23 +5,69 @@
 }
 
 .more__title {
+  margin-top: 22px;
+
   color: #111111;
   font-size: 16px;
   font-weight: 400;
   line-height: 20px;
   text-transform: uppercase;
-  margin-top: 26px;
 }
 
 .more__description {
+  margin-top: 8px;
+
   color: #444444;
   font-family: $font-text;
   font-size: 12px;
   font-weight: 400;
   line-height: 16px;
-  margin-top: 11px;
 }
 
 .more__button {
   margin-top: 22px;
+}
+
+@media (min-width: $tablet-width) {
+  .more__icon {
+    width: 60px;
+    height: 60px;
+  }
+
+  .more__title {
+    margin-top: 51px;
+    padding-left: 40px;
+    padding-right: 40px;
+
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 20px;
+  }
+
+  .more__description {
+    margin-top: 29px;
+    padding-left: 40px;
+    padding-right: 40px;
+
+    font-size: 16px;
+    font-weight: 400;
+  }
+
+  .more__button {
+    margin-top: 89px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .more__title {
+    margin-top: 49px;
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+
+  .more__description {
+    margin-top: 27px;
+    padding-left: 0;
+    padding-right: 0;
+  }
 }

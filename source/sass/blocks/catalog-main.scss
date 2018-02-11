@@ -1,6 +1,6 @@
 .catalog-main__title {
-  margin-top: 31px;
-  margin-bottom: 35px;
+  margin-top: 47px;
+  margin-bottom: 75px;
 }
 
 .catalog-main__promo {
@@ -11,4 +11,28 @@
 .catalog-main__products,
 .catalog-main__additional {
   @include full-width-mobile;
+}
+
+@media (min-width: $tablet-width) {
+  .catalog-main__products {
+    margin: 0;
+  }
+
+  .catalog-main__promo {
+    margin-top: 69px;
+    margin-bottom: 76px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .catalog-main__title {
+    margin-top: 64px;
+  }
+
+  .catalog-main__promo {
+    flex-basis: 245px;
+    margin-top: 0;
+    margin-bottom: 0;
+    padding-bottom: 30px;
+  }
 }

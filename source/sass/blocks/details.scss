@@ -4,11 +4,11 @@
   font-weight: 400;
   line-height: 20px;
   text-transform: uppercase;
-  padding-right: 70px;
+  padding-right: 63px;
 
   @include remove-margins;
 
-  margin-bottom: 18px;
+  margin-bottom: 14px;
 }
 
 .details__item {
@@ -22,4 +22,37 @@
   font-size: 12px;
   font-weight: 400;
   line-height: 16px;
+}
+
+@media (min-width: $tablet-width) {
+  .details__title {
+    padding-left: 53px;
+    padding-right: 53px;
+
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 20px;
+    text-align: center;
+  }
+
+  .details__item {
+    padding-top: 9px;
+    padding-bottom: 7px;
+
+    @include grey-border-bottom;
+  }
+
+  .details__text {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 16px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .details__title {
+    margin-bottom: 16px;
+    padding-left: 10px;
+    padding-right: 10px;
+  }
 }
