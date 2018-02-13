@@ -6,6 +6,11 @@
   padding-bottom: 12px;
 }
 
+.header__title {
+  padding-top: 6px;
+  padding-right: 9px;
+}
+
 @media (min-width: $tablet-width) {
   .header {
     margin-top: 24px;

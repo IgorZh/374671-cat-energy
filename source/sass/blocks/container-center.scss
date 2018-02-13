@@ -10,6 +10,13 @@
     margin: 0 auto;
     padding: 0 $padding-interval-tablet;
   }
+
+  .container-center--program {
+    width: $tablet-width - 2 * 70px;
+    margin: 0 auto;
+    padding-left: 70px;
+    padding-right: 67px;
+  }
 }
 
 @media (min-width: $desktop-width) {

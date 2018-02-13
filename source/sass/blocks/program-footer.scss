@@ -2,6 +2,33 @@
 .program-footer__social,
 .program-footer__copyright {
   background-color: $color-grey;
+}
 
-  @include page-paddings-mobile;
+@media (min-width: $tablet-width) and (max-width: $desktop-width - 1px) {
+  .program-footer {
+    margin-top: 45px;
+  }
+
+  .program-footer__map,
+  .program-footer__wrapper {
+    margin-left: -70px;
+    margin-right: -67px;
+  }
+
+  .program-footer__contacts {
+    padding-left: 70px;
+    padding-right: 69px;
+  }
+
+  .program-footer__copyright {
+    margin-top: 6px;
+
+    white-space: nowrap;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .program-footer {
+    margin-top: 53px;
+  }
 }

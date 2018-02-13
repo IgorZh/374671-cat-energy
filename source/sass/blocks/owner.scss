@@ -1,8 +1,16 @@
-.owner__title {
-  padding-right: 100px;
+@media (max-width: $tablet-width - 1px) {
+  .owner__title .sub-section-title__text {
+    padding-right: 16px;
+  }
 }
 
 @media (min-width: $tablet-width) {
+  .owner__wrapper {
+    margin-top: 76px;
+  }
+}
+
+@media (min-width: $desktop-width) {
   .owner__wrapper {
     display: flex;
     flex-wrap: wrap;
@@ -11,5 +19,13 @@
 
   .owner__item {
     width: 570px;
+
+    &:first-child .form-field__label--required {
+      margin-right: 26px;
+    }
+
+    &:last-child {
+      margin-top: 0;
+    }
   }
 }

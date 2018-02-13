@@ -1,0 +1,26 @@
+.comment__textarea {
+  height: 128px;
+}
+
+@media (min-width: $tablet-width) {
+  .comment {
+    margin-top: 65px;
+    margin-bottom: 65px;
+  }
+
+  .comment__title {
+    margin-bottom: 65px;
+  }
+
+  .comment__textarea {
+    padding-top: 15px;
+    padding-left: 16px;
+    height: 146px;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .comment {
+    margin-bottom: 69px;
+  }
+}

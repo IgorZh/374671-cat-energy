@@ -1,5 +1,5 @@
 .program-main__header {
-  padding-top: 30px;
+  padding-top: 48px;
 }
 
 .program-main__description {
@@ -7,6 +7,34 @@
   font-weight: 400;
   line-height: 18px;
   text-transform: uppercase;
-  margin-top: 35px;
+  margin-top: 29px;
   padding-right: 50px;
+}
+
+@media (min-width: $tablet-width) {
+  .program-main__header {
+    margin-left: -40px;
+  }
+
+  .program-main__description {
+    margin-top: 45px;
+    margin-left: 40px;
+    padding-right: 300px;
+
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 30px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .program-main__header {
+    padding-top: 68px;
+    margin-left: 0;
+  }
+
+  .program-main__description {
+    margin-left: 0;
+    padding-right: 850px;
+  }
 }
