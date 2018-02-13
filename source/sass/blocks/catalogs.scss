@@ -6,10 +6,6 @@
   }
 
   .catalogs__item {
-    width: 570px;
-
-    &:not(:first-child) {
-      margin-left: 80px;
-    }
+    flex-basis: 570px;
   }
 }

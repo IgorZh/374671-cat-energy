@@ -3,13 +3,14 @@
 }
 
 .index-main__advantages {
-  padding-top: 20px;
+  padding-top: 14px;
+  margin-bottom: 40px;
 }
 
 .index-main__example {
   padding-left: $padding-interval-mobile;
   padding-right: $padding-interval-mobile;
-  padding-top: 25px;
+  padding-top: 6px;
 
   background-color: $color-grey;
 
@@ -18,14 +19,46 @@
 
 @media (min-width: $tablet-width) {
   .index-main__example {
+    background-color: inherit;
+    padding-top: 32px;
+
     @include page-paddings-tablet;
     @include full-width-tablet;
+  }
+
+  .index-main__catalogs {
+    margin-top: 0;
+  }
+
+  .index-main__advantages {
+    padding-top: 35px;
+    padding-bottom: 55px;
+    margin-bottom: 0;
+
+    @include page-paddings-tablet;
+    @include full-width-tablet;
+    @include grey-border-bottom;
   }
 }
 
 @media (min-width: $desktop-width) {
   .index-main__example {
+    padding-top: 69px;
+
+    background: linear-gradient(#ffffff 213px, $color-grey 100px);
+
     @include page-paddings-desktop;
     @include full-width-desktop;
+  }
+
+  .index-main__catalogs {
+    margin-top: 80px;
+  }
+
+  .index-main__advantages {
+    padding-top: 64px;
+    padding-bottom: 0;
+
+    border-bottom: none;
   }
 }

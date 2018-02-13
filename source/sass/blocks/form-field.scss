@@ -4,16 +4,20 @@
   align-items: baseline;
 
   &:not(:first-of-type) {
-    margin-top: 14px;
+    margin-top: 13px;
   }
 }
 
 .form-field__label {
-  margin-right: 15px;
+  margin-right: 14px;
 
   color: #222222;
   font-size: 16px;
   text-transform: uppercase;
+
+  &--required {
+    margin-right: 15px;
+  }
 }
 
 .form-field__label--required::after {
@@ -22,11 +26,64 @@
 
 .form-field__input {
   flex-grow: 1;
-  padding: 15px 0 15px 16px;
+  padding: 9px 0 11px 15px;
 
   font-family: $font-main;
   font-size: 16px;
   text-transform: uppercase;
 
   border: 1px solid #cdcdcd;
+}
+
+.form-field__icon-wrapper {
+  flex-grow: 1;
+  position: relative;
+  display: flex;
+  margin-left: -5px;
+
+  .form-field__input {
+    padding-right: 40px;
+  }
+}
+
+.form-field__icon {
+  position: absolute;
+  font-style: normal;
+  right: 15px;
+  top: 15px;
+}
+
+@media (min-width: $tablet-width) {
+  .form-field {
+    &:not(:first-of-type) {
+      margin-top: 20px;
+    }
+  }
+
+  .form-field__label {
+    margin-right: 16px;
+
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 20px;
+
+    &--required {
+      margin-right: 18px;
+    }
+  }
+
+  .form-field__input {
+    padding-left: 19px;
+
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 20px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .form-field__icon {
+    top: 19px;
+    right: 20px;
+  }
 }

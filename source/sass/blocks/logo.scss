@@ -1,0 +1,9 @@
+.logo[href] img {
+  &:hover {
+    opacity: 0.8;
+  }
+
+  &:active {
+    opacity: 0.6;
+  }
+}

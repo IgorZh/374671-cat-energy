@@ -1,5 +1,24 @@
+.program-header {
+  @include page-paddings-mobile;
+  @include full-width-mobile;
+  @include grey-border-bottom;
+}
+
+@media (min-width: $tablet-width) and (max-width: $desktop-width - 1px) {
+  .program-header {
+    margin-left: -60px;
+    margin-right: -60px;
+
+    background: none;
+
+    border-bottom: none;
+  }
+}
+
 @media (min-width: $desktop-width) {
   .program-header {
     background: none;
+
+    border-bottom: none;
   }
 }

@@ -1,12 +1,12 @@
 .contacts {
-  padding-top: 33px;
-  padding-bottom: 28px;
+  padding-top: 30px;
+  padding-bottom: 25px;
   display: flex;
-  justify-content: space-between;
 }
 
 .contacts__slogan {
   margin: 0;
+
   font-size: 16px;
   line-height: 20px;
   text-transform: uppercase;
@@ -14,4 +14,54 @@
 
 .contacts__address {
   @include remove-margins;
+
+  width: 186px;
+
+  line-height: 20px;
+}
+
+@media (min-width: $tablet-width) {
+  .contacts {
+    justify-content: space-between;
+    padding: 64px 71px 62px 72px;
+  }
+
+  .contacts__slogan {
+    padding-right: 200px;
+
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 25px;
+  }
+
+  .contacts__address {
+    padding-left: 70px;
+
+    text-align: right;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .contacts {
+    justify-content: flex-start;
+    padding: 64px 0 62px 76px;
+  }
+
+  .contacts__slogan {
+    padding-right: 0;
+    width: 155px;
+
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 25px;
+  }
+
+  .contacts__address {
+    padding-left: 0;
+    margin-left: 95px;
+    width: 180px;
+
+    font-size: 16px;
+    text-align: left;
+  }
 }

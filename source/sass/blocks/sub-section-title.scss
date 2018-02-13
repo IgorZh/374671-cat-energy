@@ -1,7 +1,130 @@
 .sub-section-title {
+  position: relative;
+  z-index: 1;
+  margin-top: 28px;
+  margin-bottom: 34px;
+
   font-size: 24px;
   font-weight: 400;
   line-height: 24px;
-  margin-top: 31px;
-  margin-bottom: 30px;
+
+  padding-right: $padding-interval-mobile;
+  margin-right: -$padding-interval-mobile;
+
+  &::after {
+    content: "";
+    position: absolute;
+    top: 13px;
+    left: 0;
+    right: 0;
+    border-top: 3px solid $color-green;
+    z-index: -1;
+  }
+}
+
+.sub-section-title__text {
+  position: relative;
+  display: inline-block;
+  padding-right: 24px;
+  z-index: 1;
+  background-color: #ffffff;
+}
+
+// .sub-section-title {
+//   position: relative;
+//   z-index: 1;
+//   margin-top: 28px;
+//   margin-bottom: 34px;
+//   padding-right: $padding-interval-mobile;
+//   margin-right: -$padding-interval-mobile;
+
+//   font-size: 24px;
+//   font-weight: 400;
+//   line-height: 24px;
+
+//   &::after {
+//     content: "";
+//     position: absolute;
+//     bottom: 0;
+//     left: 0;
+//     right: 0;
+//     height: 7px;
+//     border-top: 3px solid $color-green;
+//     z-index: -1;
+//   }
+// }
+
+// .sub-section-title__text {
+//   padding-right: 22px;
+
+//   background-color: #ffffff;
+// }
+
+@media (min-width: $tablet-width) {
+  .sub-section-title {
+    margin-top: 6px;
+    margin-bottom: 76px;
+
+    font-size: 36px;
+    font-weight: 400;
+    line-height: 36px;
+
+    &::after {
+      top: 22px;
+
+      height: 12px;
+    }
+
+    @include page-paddings-tablet;
+    @include full-width-tablet;
+
+    &--program {
+      margin-left: -70px;
+      margin-right: -67px;
+      padding-left: 27px;
+      padding-right: 67px;
+    }
+  }
+
+  .sub-section-title__text {
+    padding-right: 34px;
+    padding-left: 38px;
+
+    background-color: #ffffff;
+
+    &--program {
+      padding-right: 40px;
+      padding-left: 40px;
+    }
+  }
+
+  .sub-section-title__text br {
+    display: none;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .sub-section-title {
+    margin-top: 16px;
+
+    font-size: 36px;
+    font-weight: 400;
+    line-height: 36px;
+
+    &::after {
+      height: 12px;
+    }
+
+    @include page-paddings-desktop;
+    @include full-width-desktop;
+
+    margin-left: -150px;
+  }
+
+  .sub-section-title__text {
+    padding-right: 39px;
+    padding-left: 40px;
+
+    background-color: #ffffff;
+  }
 }

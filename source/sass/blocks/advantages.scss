@@ -2,6 +2,34 @@
   margin-bottom: 35px;
 }
 
+.advantages__image {
+  height: 60px;
+  width: 60px;
+  vertical-align: middle;
+  flex-grow: 1;
+  flex-shrink: 0;
+
+  background-color: $color-green;
+  background-position: center;
+  background-repeat: no-repeat;
+
+  &--leaf {
+    background-image: url("/img/advantage-leaf@1x.png");
+  }
+
+  &--powder {
+    background-image: url("/img/advantage-powder@1x.png");
+  }
+
+  &--dining {
+    background-image: url("/img/advantage-dining@1x.png");
+  }
+
+  &--clock {
+    background-image: url("/img/advantage-clock@1x.png");
+  }
+}
+
 .advantages__item {
   display: flex;
   justify-content: space-between;
@@ -15,24 +43,83 @@
 }
 
 @media (min-width: $tablet-width) {
+  .advantages__title {
+    margin-bottom: 63px;
+  }
+
   .advantages__list {
+    counter-reset: section;
+
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    justify-content: space-between;
+    justify-content: flex-start;
   }
 
   .advantages__item {
-    width: 40%;
+    position: relative;
+
+    flex-direction: column;
+    justify-content: flex-start;
+    width: 250px;
+    height: 230px;
+    margin-bottom: 0;
+
+    &:nth-child(odd) {
+      margin-right: 134px;
+    }
+
+    &:nth-child(-n + 2) {
+      margin-bottom: 87px;
+    }
+
+    &::before {
+      counter-increment: section;
+      content: counter(section);
+
+      display: block;
+      position: absolute;
+      top: 0;
+      left: 113px;
+      z-index: -1;
+      height: 230px;
+
+      color: #f2f2f2;
+      font-size: 281px;
+      font-weight: 400;
+      line-height: 200px;
+    }
+  }
+
+  .advantages__image {
+    flex-grow: 0;
+    height: 80px;
+    width: 80px;
+  }
+
+  .advantages__description {
+    flex-grow: 0;
+    margin-left: 0;
+    margin-top: 32px;
+    padding-right: 5px;
   }
 }
 
 @media (min-width: $desktop-width) {
   .advantages__list {
     flex-wrap: nowrap;
+    justify-content: space-between;
   }
 
   .advantages__item {
     width: 240px;
+
+    &:nth-child(-n + 2) {
+      margin-bottom: 0;
+    }
+
+    &:nth-child(odd) {
+      margin-right: 0;
+    }
   }
 }

@@ -1,3 +1,17 @@
+.catalog-header {
+  @include page-paddings-mobile;
+  @include full-width-mobile;
+  @include grey-border-bottom;
+}
+
+@media (min-width: $tablet-width) {
+  .catalog-header {
+    background: none;
+
+    border-bottom: none;
+  }
+}
+
 @media (min-width: $desktop-width) {
   .catalog-header {
     background: none;

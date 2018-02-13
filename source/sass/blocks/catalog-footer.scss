@@ -2,6 +2,10 @@
 .catalog-footer__social,
 .catalog-footer__copyright {
   background-color: $color-grey;
+}
 
-  @include page-paddings-mobile;
+@media (min-width: $desktop-width) {
+  .catalog-footer {
+    margin-top: 55px;
+  }
 }
