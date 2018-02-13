@@ -26,13 +26,7 @@
     margin-bottom: 59px;
 
     border-bottom: none;
-    background: linear-gradient(
-      to bottom,
-      #ffffff 0%,
-      #ffffff 82px,
-      $color-grey 82px,
-      $color-grey 100%
-    );
+    background: linear-gradient(to bottom, #ffffff 0%, #ffffff 82px, $color-grey 82px, $color-grey 100%);
 
     &:first-child {
       border-top: none;
