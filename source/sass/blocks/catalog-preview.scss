@@ -23,14 +23,21 @@
 
 .catalog-preview__image--slim {
   position: absolute;
-
   top: -3px;
+  left: -100%;
+  right: -100%;
+
+  margin: 0 auto;
 }
 
 .catalog-preview__image--pro {
   position: absolute;
 
+  top: -100%;
+  bottom: -100%;
   right: -8px;
+
+  margin: auto 0;
 }
 
 .catalog-preview__title-wrapper {

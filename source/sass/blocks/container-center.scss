@@ -21,8 +21,8 @@
 
 @media (min-width: $desktop-width) {
   .container-center {
-    width: $desktop-width - 2 * $padding-interval-desktop;
+    width: $desktop-width - 80px;
     margin: 0 auto;
-    padding: 0 $padding-interval-desktop;
+    padding: 0 40px;
   }
 }

@@ -33,6 +33,7 @@
   .index-main__advantages {
     padding-top: 35px;
     padding-bottom: 55px;
+    margin-bottom: 0;
 
     @include page-paddings-tablet;
     @include full-width-tablet;
