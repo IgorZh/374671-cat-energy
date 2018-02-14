@@ -62,13 +62,7 @@
       margin-top: -161px;
       margin-bottom: 125px;
       padding-top: 160px;
-      background: linear-gradient(
-        to bottom,
-        #ffffff 0%,
-        #ffffff 160px,
-        $color-grey 82px,
-        $color-grey 100%
-      );
+      background: linear-gradient(to bottom, #ffffff 0%, #ffffff 160px, $color-grey 82px, $color-grey 100%);
     }
 
     img {
@@ -105,13 +99,7 @@
     }
 
     &--before {
-      background: linear-gradient(
-        to bottom,
-        #ffffff 0%,
-        #ffffff 190px,
-        $color-grey 82px,
-        $color-grey 100%
-      );
+      background: linear-gradient(to bottom, #ffffff 0%, #ffffff 190px, $color-grey 82px, $color-grey 100%);
 
       img {
         padding-left: 32px;
