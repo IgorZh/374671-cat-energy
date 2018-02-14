@@ -15,10 +15,16 @@
       <nav class="main-nav main-nav--close">
         <div class="header__wrapper">
           <a class="logo header__logo">
-            <img src="/img/icon-logo-mobile.svg"
-              width="33"
-              height="38"
-              alt="Cat energy logo" />
+            <picture>
+              <source media="(min-width: 1300px)"
+                srcset="/img/logo-desktop.svg">
+              <source media="(min-width: 768px)"
+                srcset="/img/logo-tablet.svg">
+              <img src="/img/icon-logo-mobile.svg"
+                width="33"
+                height="38"
+                alt="Cat energy logo" />
+            </picture>
           </a>
           <a class="logo header__title">
             <img src="/img/logo-mobile-header.svg"
@@ -49,11 +55,18 @@
       <div class="index-header">
         <h1 class="index-header__title">Функциональное питание для котов</h1>
         <div class="index-header__slogan">Занялся собой? Займись котом!</div>
-        <img class="index-header__logo"
-          src="/img/index-can-mobile@1x.png"
-          width="280"
-          height="270"
-          alt="Функциональное питание для котов" />
+        <picture class="index-header__picture">
+          <source media="(min-width: 1300px)"
+            srcset="/img/index-can-desktop@1x.png 1x, /img/index-can-desktop@2x.png 2x">
+          <source media="(min-width: 768px)"
+            srcset="/img/index-can-tablet@1x.jpg 1x, /img/index-can-tablet@2x.jpg 2x">
+          <img class="index-header__logo"
+            src="/img/index-can-mobile@1x.png"
+            width="280"
+            height="270"
+            srcset="/img/index-can-mobile@2x.png 2x"
+            alt="Функциональное питание для котов">
+        </picture>
         <a class="index-header__to-choose button button--green"
           href="program.html">Подобрать программу</a>
       </div>
@@ -77,16 +90,12 @@
               питомцу сбросить лишний вес.</p>
             <a class="catalog-preview__to-catalog"
               href="catalog.html">Каталог Slim
-              <img class="catalog-preview__icon"
-                src="/img/icon-right-arrow-long.svg"
-                width="24"
-                height="11" />
             </a>
           </li>
           <li class="catalog-preview catalog-preview--pro catalogs__item">
             <div class="catalog-preview__title-wrapper">
               <div class="catalog-preview__image-wrapper">
-                <img class="catalog-preview__image--pro"
+                <img class="catalog-preview__image catalog-preview__image--pro"
                   src="/img/icon-cat-pro.svg"
                   width="67"
                   height="28" />
@@ -97,10 +106,6 @@
               Заработать авторитет среди дворовых котов и даже собак? Серия Cat Energy Pro поможет вашему коту нарастить необходимые мышцы!</p>
             <a class="catalog-preview__to-catalog"
               href="cataloghtml">Каталог pro
-              <img class="catalog-preview__icon"
-                src="/img/icon-right-arrow-long.svg"
-                width="24"
-                height="11" />
             </a>
           </li>
         </ul>
@@ -160,10 +165,28 @@
           </div>
         </div>
         <div class="example__image-wrapper">
-          <img class="example__image example__image--before"
-            src="/img/before-mobile@1x.png"
-            width="311"
-            height="232" />
+          <div class="example__image example__image--before">
+            <picture>
+              <source media="(min-width: 1300px)"
+                srcset="/img/before-desktop@1x.png 1x, /img/before-desktop@2x.png 2x">
+              <source media="(min-width: 768px)"
+                srcset="/img/before-tablet@1x.png 1x, /img/before-tablet@2x.png 2x">
+              <img src="/img/before-mobile@1x.png"
+                srcset="/img/before-mobile@2x.png 2x"
+                alt="Функциональное питание для котов">
+            </picture>
+          </div>
+          <div class="example__image example__image--after">
+            <picture>
+              <source media="(min-width: 1300px)"
+                srcset="/img/after-desktop@1x.png 1x, /img/after-desktop@2x.png 2x">
+              <source media="(min-width: 768px)"
+                srcset="/img/after-tablet@1x.png 1x, /img/after-tablet@2x.png 2x">
+              <img src="/img/after-mobile@1x.png"
+                srcset="/img/after-mobile@2x.png 2x"
+                alt="Функциональное питание для котов">
+            </picture>
+          </div>
           <div class="slider example__slider">
             <label class="slider__label">Было</label>
             <div class='slider__line'>
@@ -184,7 +207,9 @@
             <br>к сотрудничеству дилеров!
           </p>
           <p class="contacts__address text">
-            ул. Большая Конюшенная, д. 19/8 Санкт-Петербург
+            ул. Большая Конюшенная, д. 19/8
+            <br>
+            <br>Санкт-Петербург
           </p>
         </div>
         <iframe class="footer__map-iframe"
@@ -247,6 +272,7 @@
       </div>
     </footer>
   </div>
+  <script src="/js/picturefill.min.js"></script>
 </body>
 
 </html>

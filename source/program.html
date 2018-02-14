@@ -16,10 +16,16 @@
         <div class="header__wrapper">
           <a class="logo header__logo"
             href="index.html">
-            <img src="/img/icon-logo-mobile.svg"
-              width="33"
-              height="38"
-              alt="Cat energy logo" />
+            <picture>
+              <source media="(min-width: 1300px)"
+                srcset="/img/logo-desktop.svg">
+              <source media="(min-width: 768px)"
+                srcset="/img/logo-tablet.svg">
+              <img src="/img/icon-logo-mobile.svg"
+                width="33"
+                height="38"
+                alt="Cat energy logo" />
+            </picture>
           </a>
           <a class="logo header__title"
             href="index.html">
@@ -254,7 +260,9 @@
             <br>к сотрудничеству дилеров!
           </p>
           <p class="contacts__address text">
-            ул. Большая Конюшенная, д. 19/8 Санкт-Петербург
+            ул. Большая Конюшенная, д. 19/8
+            <br>
+            <br> Санкт-Петербург
           </p>
         </div>
         <iframe class="footer__map-iframe"
@@ -314,8 +322,10 @@
               height="34" />
           </a>
         </div>
-        </d </footer>
       </div>
+    </footer>
+  </div>
+  <script src="/js/picturefill.min.js"></script>
 </body>
 
 </html>

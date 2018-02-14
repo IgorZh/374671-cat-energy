@@ -8,6 +8,11 @@
 
   @include full-width-mobile;
   @include page-paddings-mobile;
+
+  @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+    background-image: url("/img/index-background-mobile@2x.jpg");
+    background-size: 320px auto;
+  }
 }
 
 .index-header__title {
@@ -82,11 +87,14 @@
   }
 
   .index-header__logo {
-    order: 2;
-    margin-top: -75px;
-    margin-left: -26px;
-    width: 609px;
+    margin-top: -82px;
+    margin-left: -88px;
+    width: 709px;
     height: 609px;
+  }
+
+  .index-header__picture {
+    order: 2;
   }
 
   .index-header__to-choose {
@@ -108,7 +116,7 @@
     position: relative;
 
     padding-left: 100px;
-    padding-top: 109px;
+    padding-top: 106px;
     width: 420px;
     height: 475px;
   }
@@ -121,8 +129,8 @@
     position: absolute;
 
     left: 100%;
-    margin-top: -80px;
-    margin-left: -40px;
+    margin-top: -369px;
+    margin-left: -70px;
     width: 552px;
     height: 499px;
   }

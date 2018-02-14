@@ -22,12 +22,16 @@
     justify-content: flex-start;
   }
 
-  .header__logo {
+  .header__logo img {
     height: 58px;
-    width: 86px;
+    width: 173px;
   }
 
   .header__button {
+    display: none;
+  }
+
+  .header__title {
     display: none;
   }
 }
@@ -37,11 +41,20 @@
     margin-top: 0;
     padding-top: 54px;
 
-    background: url("/img/index-background-mobile@1x.jpg") no-repeat;
+    background: url("/img/index-background-desktop@1x.jpg") no-repeat;
     background-size: 680px 696px;
     background-position: right;
 
     @include page-paddings-desktop;
     @include full-width-desktop;
+
+    @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+      background-image: url("/img/index-background-desktop@2x.jpg");
+    }
+  }
+
+  .header__logo img {
+    height: 59px;
+    width: 202px;
   }
 }
