@@ -1,6 +1,6 @@
 .catalog-main__title {
-  margin-top: 47px;
-  margin-bottom: 75px;
+  margin-top: 19px;
+  margin-bottom: 32px;
 }
 
 .catalog-main__promo {
@@ -14,6 +14,10 @@
 }
 
 @media (min-width: $tablet-width) {
+  .catalog-main__title {
+    margin-top: 47px;
+  }
+
   .catalog-main__products {
     margin: 0;
   }
@@ -21,6 +25,10 @@
   .catalog-main__promo {
     margin-top: 69px;
     margin-bottom: 76px;
+  }
+
+  .catalog-main__additional {
+    margin-top: 11px;
   }
 }
 
@@ -34,5 +42,9 @@
     margin-top: 0;
     margin-bottom: 0;
     padding-bottom: 30px;
+  }
+
+  .catalog-main__additional {
+    margin-top: 20px;
   }
 }

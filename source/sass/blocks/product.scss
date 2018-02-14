@@ -1,6 +1,6 @@
 .product {
   @include page-paddings-mobile;
-  padding-bottom: 24px;
+  padding-bottom: 25px;
 }
 
 .product__info {
@@ -23,14 +23,13 @@
   .product__info {
     flex-direction: column;
     align-items: center;
-  }
 
-  .product__image {
-    width: 195px;
-    height: 208px;
+    &--small {
+      margin-top: 36px;
+    }
   }
 
   .product__details {
-    padding-top: 39px;
+    padding-top: 34px;
   }
 }

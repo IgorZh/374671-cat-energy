@@ -21,11 +21,7 @@
     "build": "gulp style",
     "start": "gulp serve"
   },
-  "browserslist": [
-    "last 2 versions",
-    "IE 11",
-    "Firefox ESR"
-  ],
+  "browserslist": ["last 2 versions", "IE 11", "Firefox ESR"],
   "editorconfig-cli": [
     "*.json",
     "*.js",

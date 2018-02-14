@@ -38,9 +38,9 @@
 }
 
 @media (min-width: $tablet-width) {
-  .slider {
-    background: linear-gradient(90deg, $color-grey 50%, #eaeaea 50%);
-  }
+  // .slider {
+  //   background: linear-gradient(90deg, $color-grey 50%, #eaeaea 50%);
+  // }
 
   .slider__line {
     padding: 0;

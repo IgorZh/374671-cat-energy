@@ -9,7 +9,11 @@
 }
 
 .example__image {
-  margin-left: -20px;
+  margin-left: -15px;
+
+  &--before {
+    display: none;
+  }
 }
 
 .example__slider {
@@ -31,6 +35,8 @@
   }
 
   .example__image-wrapper {
+    position: relative;
+
     margin-top: 255px;
     background: linear-gradient(90deg, $color-grey 50%, #eaeaea 50%);
 
@@ -39,10 +45,30 @@
   }
 
   .example__image {
-    margin-top: -152px;
-    margin-left: 18px;
-    height: 499px;
-    width: 677px;
+    margin-left: 0;
+
+    &--before {
+      display: block;
+
+      position: absolute;
+      overflow: hidden;
+      top: 0;
+      right: 50%;
+      bottom: 0;
+      left: 0;
+      z-index: 10;
+
+      margin-left: 29px;
+      margin-top: -161px;
+      margin-bottom: 125px;
+      padding-top: 160px;
+      background: linear-gradient(to bottom, #ffffff 0%, #ffffff 160px, $color-grey 82px, $color-grey 100%);
+    }
+
+    img {
+      margin-top: -171px;
+      margin-left: 18px;
+    }
   }
 
   .example__slider {
@@ -64,24 +90,33 @@
   .example__image {
     margin-top: -188px;
     margin-left: -18px;
+
+    &--after {
+      img {
+        padding-right: 32px;
+        padding-top: 7px;
+      }
+    }
+
+    &--before {
+      background: linear-gradient(to bottom, #ffffff 0%, #ffffff 190px, $color-grey 82px, $color-grey 100%);
+
+      img {
+        padding-left: 32px;
+        padding-top: 7px;
+      }
+    }
   }
 
   .example__wrapper {
-    flex-basis: 437px;
-    flex-grow: 1;
-    flex-shrink: 0;
     padding-right: 42px;
   }
 
   .example__image-wrapper {
-    flex-basis: 540px;
-    flex-grow: 1;
-    flex-shrink: 0;
-    margin-right: -53px;
-    margin-top: 162px;
-
-    @include page-paddings-desktop;
-    @include full-width-desktop;
+    margin-right: -110px;
+    margin-top: 144px;
+    padding-top: 161px;
+    padding-right: 39px;
 
     margin-left: 0;
   }
@@ -89,16 +124,14 @@
   .example__description {
     margin-top: 136px;
     margin-bottom: 67px;
+    padding-right: 65px;
   }
 
   .example__slider {
     margin-top: 0;
     padding-top: 31px;
     padding-bottom: 68px;
-
-    @include page-paddings-desktop;
-    @include full-width-desktop;
-
-    padding-right: 82px;
+    margin-right: -9px;
+    padding-right: 0;
   }
 }

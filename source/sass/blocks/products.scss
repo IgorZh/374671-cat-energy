@@ -14,7 +14,15 @@
   @include page-paddings-mobile;
 }
 
+.products__order-button {
+  margin-top: -5px;
+}
+
 @media (min-width: $tablet-width) {
+  .products {
+    padding-top: 40px;
+  }
+
   .products__list {
     display: flex;
     justify-content: space-between;
@@ -23,7 +31,8 @@
 
   .products__item {
     width: 250px;
-    margin-bottom: 59px;
+    margin-bottom: 55px;
+    align-self: flex-end;
 
     border-bottom: none;
     background: linear-gradient(to bottom, #ffffff 0%, #ffffff 82px, $color-grey 82px, $color-grey 100%);
@@ -39,7 +48,8 @@
 
   .products__more {
     width: 248px;
-    padding-top: 130px;
+    margin-top: 84px;
+    padding-top: 51px;
     padding-bottom: 39px;
     padding-right: 37px;
     padding-left: 37px;
