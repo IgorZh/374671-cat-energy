@@ -9,8 +9,28 @@
   font-family: $font-text;
   font-size: 16px;
   text-decoration: none;
+
+  &:active {
+    opacity: 0.3;
+  }
 }
 
 .copyright__logo {
   margin-left: 23px;
+
+  fill: #666666;
+
+  &:hover {
+    fill: $color-green;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .copyright__text {
+    margin-top: -8px;
+  }
 }

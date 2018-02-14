@@ -4,6 +4,10 @@
   background-color: $color-grey;
 }
 
+.program-footer__contacts {
+  margin-top: 3px;
+}
+
 @media (min-width: $tablet-width) and (max-width: $desktop-width - 1px) {
   .program-footer {
     margin-top: 45px;
@@ -21,7 +25,7 @@
   }
 
   .program-footer__copyright {
-    margin-top: 6px;
+    margin-top: 2px;
 
     white-space: nowrap;
   }
@@ -30,5 +34,9 @@
 @media (min-width: $desktop-width) {
   .program-footer {
     margin-top: 53px;
+  }
+
+  .program-footer__wrapper {
+    padding-top: 72px;
   }
 }
