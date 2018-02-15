@@ -76,7 +76,7 @@ gulp.task("copy-html", function() {
 
 gulp.task("copy-js", function() {
   return gulp
-    .src(["source/*.js"], {
+    .src(["source/js/**"], {
       base: "source",
     })
     .pipe(gulp.dest("build"));
@@ -114,5 +114,5 @@ gulp.task("serve", function() {
   gulp.watch("source/sass/**/*.{scss,sass}", ["style"]);
   gulp.watch("source/*.html", ["copy-html"]);
   gulp.watch("source/js/*.js", ["copy-js"]);
-  gulp.watch("source/img/**", ["build-image"]);
+  gulp.watch("source/img/*", ["build-image"]);
 });
