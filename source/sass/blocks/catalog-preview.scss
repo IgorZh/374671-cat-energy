@@ -76,6 +76,10 @@
   line-height: 16px;
   text-transform: uppercase;
 
+  &:active {
+    opacity: 0.3;
+  }
+
   &:hover::after {
     width: 33px;
     top: 3px;
