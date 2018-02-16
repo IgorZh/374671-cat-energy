@@ -14,7 +14,7 @@
 <body>
   <div class="container-center">
     <header class="header catalog-header">
-      <nav class="main-nav main-nav--close">
+      <nav class="main-nav">
         <div class="header__wrapper">
           <a class="logo header__logo"
             href="index.html"
@@ -38,13 +38,16 @@
               height="18"
               alt="Cat energy logo" />
           </a>
-          <button class="menu-toggle header__button"
-            aria-label="Открыть/Закрыть меню">
-            <img src="/img/icon-mobile-menu.svg"
-              width="24"
-              height="18"
-              alt="Открыть/Закрыть меню" />
-          </button>
+          <div class="menu-toggle menu-toggle--close">
+            <button class="menu-toggle__button header__button"
+              aria-label="Открыть/Закрыть меню">
+              <img src="/img/icon-mobile-menu.svg"
+                width="24"
+                height="18"
+                alt="Открыть/Закрыть меню" />
+            </button>
+            <div class="menu-toggle__placeholder"></div>
+          </div>
         </div>
         <ul class="main-nav__list list">
           <li class="main-nav__item">
@@ -68,19 +71,23 @@
         <ul class="products__list list">
           <li class="products__item product">
             <div class="product__info product__info--small">
-              <picture>
-                <source media="(min-width: 1300px)"
-                  srcset="/img/catalog-chicken-desktop@1x.png 1x, /img/chicken-small-desktop@2x.png 2x">
-                <source media="(min-width: 768px)"
-                  srcset="/img/chicken-small-tablet@1x.png 1x, /img/chicken-small-tablet@2x.png 2x">
-                <img class="product__image products__image"
-                  src="/img/chicken-small-mobile@1x.jpg"
-                  srcset="/img/chicken-small-mobile@2x.jpg 2x"
-                  alt="Курица 500г">
-              </picture>
+                <a class="product__link" href="#">
+                <picture>
+                  <source media="(min-width: 1300px)"
+                    srcset="/img/catalog-chicken-desktop@1x.png 1x, /img/chicken-small-desktop@2x.png 2x">
+                  <source media="(min-width: 768px)"
+                    srcset="/img/chicken-small-tablet@1x.png 1x, /img/chicken-small-tablet@2x.png 2x">
+                  <img class="product__image products__image"
+                    src="/img/chicken-small-mobile@1x.jpg"
+                    srcset="/img/chicken-small-mobile@2x.jpg 2x"
+                    alt="Курица 500г">
+                </picture>
+              </a>
               <div class="product__details details">
-                <h3 class="details__title">Cat Energy PRO 500 г
-                </h3>
+                  <a class="product__link" href="#">
+                  <h3 class="details__title">Cat Energy PRO 500 г
+                  </h3>
+                </a>
                 <ul class="details__list list">
                   <li class="details__item">
                     <span class="details__text">Объем</span>
@@ -101,18 +108,22 @@
           </li>
           <li class="products__item product">
             <div class="product__info">
-              <picture>
-                <source media="(min-width: 1300px)"
-                  srcset="/img/chicken-big-desktop@1x.png 1x, /img/chicken-big-desktop@2x.png 2x">
-                <source media="(min-width: 768px)"
-                  srcset="/img/chicken-big-tablet@1x.png 1x, /img/chicken-big-tablet@2x.png 2x">
-                <img class="product__image products__image"
-                  src="/img/chicken-big-mobile@1x.jpg"
-                  srcset="/img/chicken-big-mobile@2x.jpg 2x"
-                  alt="Курица 1000г">
-              </picture>
+                <a class="product__link" href="#">
+                <picture>
+                  <source media="(min-width: 1300px)"
+                    srcset="/img/chicken-big-desktop@1x.png 1x, /img/chicken-big-desktop@2x.png 2x">
+                  <source media="(min-width: 768px)"
+                    srcset="/img/chicken-big-tablet@1x.png 1x, /img/chicken-big-tablet@2x.png 2x">
+                  <img class="product__image products__image"
+                    src="/img/chicken-big-mobile@1x.jpg"
+                    srcset="/img/chicken-big-mobile@2x.jpg 2x"
+                    alt="Курица 1000г">
+                </picture>
+              </a>
               <div class="product__details details">
-                <h3 class="details__title">Cat Energy PRO 1000 Г</h3>
+                  <a class="product__link" href="#">
+                  <h3 class="details__title">Cat Energy PRO 1000 Г</h3>
+                </a>
                 <ul class="details__list list">
                   <li class="details__item">
                     <span class="details__text">Объем</span>
@@ -133,18 +144,22 @@
           </li>
           <li class="products__item product">
             <div class="product__info product__info--small">
-              <picture>
-                <source media="(min-width: 1300px)"
-                  srcset="/img/fish-small-desktop@1x.png 1x, /img/fish-small-desktop@2x.png 2x">
-                <source media="(min-width: 768px)"
-                  srcset="/img/fish-small-tablet@1x.png 1x, /img/fish-small-tablet@2x.png 2x">
-                <img class="product__image products__image"
-                  src="/img/fish-small-mobile@1x.jpg"
-                  srcset="/img/fish-small-mobile@2x.jpg 2x"
-                  alt="Рыба 500г">
-              </picture>
+                <a class="product__link" href="#">
+                <picture>
+                  <source media="(min-width: 1300px)"
+                    srcset="/img/fish-small-desktop@1x.png 1x, /img/fish-small-desktop@2x.png 2x">
+                  <source media="(min-width: 768px)"
+                    srcset="/img/fish-small-tablet@1x.png 1x, /img/fish-small-tablet@2x.png 2x">
+                  <img class="product__image products__image"
+                    src="/img/fish-small-mobile@1x.jpg"
+                    srcset="/img/fish-small-mobile@2x.jpg 2x"
+                    alt="Рыба 500г">
+                </picture>
+              </a>
               <div class="product__details details">
-                <h3 class="details__title">Cat Energy PRO 500 Г</h3>
+                  <a class="product__link" href="#">
+                  <h3 class="details__title">Cat Energy PRO 500 Г</h3>
+                </a>
                 <ul class="details__list list">
                   <li class="details__item">
                     <span class="details__text">Объем</span>
@@ -165,18 +180,22 @@
           </li>
           <li class="products__item product">
             <div class="product__info">
-              <picture>
-                <source media="(min-width: 1300px)"
-                  srcset="/img/fish-big-desktop@1x.png 1x, /img/fish-big-desktop@2x.png 2x">
-                <source media="(min-width: 768px)"
-                  srcset="/img/fish-big-tablet@1x.png 1x, /img/fish-big-tablet@2x.png 2x">
-                <img class="product__image products__image"
-                  src="/img/fish-big-mobile@1x.jpg"
-                  srcset="/img/fish-big-mobile@2x.jpg 2x"
-                  alt="Рыба 1000г">
-              </picture>
+                <a class="product__link" href="#">
+                <picture>
+                  <source media="(min-width: 1300px)"
+                    srcset="/img/fish-big-desktop@1x.png 1x, /img/fish-big-desktop@2x.png 2x">
+                  <source media="(min-width: 768px)"
+                    srcset="/img/fish-big-tablet@1x.png 1x, /img/fish-big-tablet@2x.png 2x">
+                  <img class="product__image products__image"
+                    src="/img/fish-big-mobile@1x.jpg"
+                    srcset="/img/fish-big-mobile@2x.jpg 2x"
+                    alt="Рыба 1000г">
+                </picture>
+              </a>
               <div class="product__details details">
-                <h3 class="details__title">Cat Energy PRO 1000 Г</h3>
+                  <a class="product__link" href="#">
+                  <h3 class="details__title">Cat Energy PRO 1000 Г</h3>
+                </a>
                 <ul class="details__list list">
                   <li class="details__item">
                     <span class="details__text">Объем</span>
@@ -197,18 +216,22 @@
           </li>
           <li class="products__item product">
             <div class="product__info product__info--small">
-              <picture>
-                <source media="(min-width: 1300px)"
-                  srcset="/img/buckwheat-small-desktop@1x.png 1x, /img/buckwheat-small-desktop@2x.png 2x">
-                <source media="(min-width: 768px)"
-                  srcset="/img/buckwheat-small-tablet@1x.png 1x, /img/buckwheat-small-tablet@2x.png 2x">
-                <img class="product__image products__image"
-                  src="/img/buckwheat-small-mobile@1x.jpg"
-                  srcset="/img/buckwheat-small-mobile@2x.jpg 2x"
-                  alt="Греча 500г">
-              </picture>
+                <a class="product__link" href="#">
+                <picture>
+                  <source media="(min-width: 1300px)"
+                    srcset="/img/buckwheat-small-desktop@1x.png 1x, /img/buckwheat-small-desktop@2x.png 2x">
+                  <source media="(min-width: 768px)"
+                    srcset="/img/buckwheat-small-tablet@1x.png 1x, /img/buckwheat-small-tablet@2x.png 2x">
+                  <img class="product__image products__image"
+                    src="/img/buckwheat-small-mobile@1x.jpg"
+                    srcset="/img/buckwheat-small-mobile@2x.jpg 2x"
+                    alt="Греча 500г">
+                </picture>
+              </a>
               <div class="product__details details">
-                <h3 class="details__title">Cat Energy Slim 500 г</h3>
+                  <a class="product__link" href="#">
+                  <h3 class="details__title">Cat Energy Slim 500 г</h3>
+                </a>
                 <ul class="details__list list">
                   <li class="details__item">
                     <span class="details__text">Объем</span>
@@ -229,18 +252,22 @@
           </li>
           <li class="products__item product">
             <div class="product__info">
-              <picture>
-                <source media="(min-width: 1300px)"
-                  srcset="/img/buckwheat-big-desktop@1x.png 1x, /img/buckwheat-big-desktop@2x.png 2x">
-                <source media="(min-width: 768px)"
-                  srcset="/img/buckwheat-big-tablet@1x.png 1x, /img/buckwheat-big-tablet@2x.png 2x">
-                <img class="product__image products__image"
-                  src="/img/buckwheat-big-mobile@1x.jpg"
-                  srcset="/img/buckwheat-big-mobile@2x.jpg 2x"
-                  alt="Греча 1000г">
-              </picture>
+                <a class="product__link" href="#">
+                <picture>
+                  <source media="(min-width: 1300px)"
+                    srcset="/img/buckwheat-big-desktop@1x.png 1x, /img/buckwheat-big-desktop@2x.png 2x">
+                  <source media="(min-width: 768px)"
+                    srcset="/img/buckwheat-big-tablet@1x.png 1x, /img/buckwheat-big-tablet@2x.png 2x">
+                  <img class="product__image products__image"
+                    src="/img/buckwheat-big-mobile@1x.jpg"
+                    srcset="/img/buckwheat-big-mobile@2x.jpg 2x"
+                    alt="Греча 1000г">
+                </picture>
+              </a>
               <div class="product__details details">
-                <h3 class="details__title">Cat Energy Slim 1000 Г</h3>
+                  <a class="product__link" href="#">
+                  <h3 class="details__title">Cat Energy Slim 1000 Г</h3>
+                </a>
                 <ul class="details__list list">
                   <li class="details__item">
                     <span class="details__text">Объем</span>
@@ -261,18 +288,22 @@
           </li>
           <li class="products__item product">
             <div class="product__info product__info--small">
-              <picture>
-                <source media="(min-width: 1300px)"
-                  srcset="/img/rice-small-desktop@1x.png 1x, /img/rice-small-desktop@2x.png 2x">
-                <source media="(min-width: 768px)"
-                  srcset="/img/rice-small-tablet@1x.png 1x, /img/rice-small-tablet@2x.png 2x">
-                <img class="product__image products__image"
-                  src="/img/rice-small-mobile@1x.jpg"
-                  srcset="/img/rice-small-mobile@2x.jpg 2x"
-                  alt="Рис 500г">
-              </picture>
+                <a class="product__link" href="#">
+                <picture>
+                  <source media="(min-width: 1300px)"
+                    srcset="/img/rice-small-desktop@1x.png 1x, /img/rice-small-desktop@2x.png 2x">
+                  <source media="(min-width: 768px)"
+                    srcset="/img/rice-small-tablet@1x.png 1x, /img/rice-small-tablet@2x.png 2x">
+                  <img class="product__image products__image"
+                    src="/img/rice-small-mobile@1x.jpg"
+                    srcset="/img/rice-small-mobile@2x.jpg 2x"
+                    alt="Рис 500г">
+                </picture>
+              </a>
               <div class="product__details details">
-                <h3 class="details__title">Cat Energy Slim 500 Г</h3>
+                  <a class="product__link" href="#">
+                  <h3 class="details__title">Cat Energy Slim 500 Г</h3>
+                </a>
                 <ul class="details__list list">
                   <li class="details__item">
                     <span class="details__text">Объем</span>
@@ -317,7 +348,9 @@
           <ul class="additional__list list">
             <li class="additional__item list__item list__item--bordered">
               <div class="additional__details details">
-                <h3 class="details__title additional__title">Сахарозаменитель</h3>
+                  <a class="details__link" href="#">
+                  <h3 class="details__title additional__title">Сахарозаменитель</h3>
+                </a>
                 <ul class="details__list list additional__details-list">
                   <li class="details__item additional__details-item">
                     <span class="details__text additional__text">1 Упаковка (100 г)</span>
@@ -329,7 +362,9 @@
             </li>
             <li class="additional__item list__item list__item--bordered">
               <div class="additional__details details">
-                <h3 class="details__title additional__title">Питьевая вода</h3>
+                  <a class="details__link" href="#">
+                  <h3 class="details__title additional__title">Питьевая вода</h3>
+                </a>
                 <ul class="details__list list additional__details-list">
                   <li class="details__item additional__details-item">
                     <span class="details__text additional__text">5 литров</span>
@@ -341,7 +376,9 @@
             </li>
             <li class="additional__item list__item list__item--bordered">
               <div class="additional__details details">
-                <h3 class="details__title additional__title">Молоко</h3>
+                  <a class="details__link" href="#">
+                  <h3 class="details__title additional__title">Молоко</h3>
+                </a>
                 <ul class="details__list list  additional__details-list">
                   <li class="details__item additional__details-item">
                     <span class="details__text additional__text">1 литр</span>
@@ -353,7 +390,9 @@
             </li>
             <li class="additional__item list__item list__item--bordered">
               <div class="additional__details details">
-                <h3 class="details__title additional__title">Витамины</h3>
+                  <a class="details__link" href="#">
+                  <h3 class="details__title additional__title">Витамины</h3>
+                </a>
                 <ul class="details__list list  additional__details-list">
                   <li class="details__item additional__details-item">
                     <span class="details__text additional__text">1 упаковка (30 г)</span>

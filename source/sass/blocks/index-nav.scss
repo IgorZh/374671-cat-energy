@@ -1,5 +1,11 @@
 @media (min-width: $desktop-width) {
   .index-nav__link {
     color: #ffffff;
+
+    &--active {
+      &::after {
+        background-color: #ffffff;
+      }
+    }
   }
 }

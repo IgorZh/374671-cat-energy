@@ -14,7 +14,7 @@
 <body>
   <div class="container-center container-center--program">
     <header class="header program-header">
-      <nav class="main-nav main-nav--close">
+      <nav class="main-nav">
         <div class="header__wrapper">
           <a class="logo header__logo"
             href="index.html"
@@ -38,13 +38,16 @@
               height="18"
               alt="Cat energy logo" />
           </a>
-          <button class="menu-toggle header__button"
-            aria-label="Открыть/Закрыть меню">
-            <img src="/img/icon-mobile-menu.svg"
-              width="24"
-              height="18"
-              alt="Открыть/Закрыть меню" />
-          </button>
+          <div class="menu-toggle menu-toggle--close">
+            <button class="menu-toggle__button header__button"
+              aria-label="Открыть/Закрыть меню">
+              <img src="/img/icon-mobile-menu.svg"
+                width="24"
+                height="18"
+                alt="Открыть/Закрыть меню" />
+            </button>
+            <div class="menu-toggle__placeholder"></div>
+          </div>
         </div>
         <ul class="main-nav__list list">
           <li class="main-nav__item">

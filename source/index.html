@@ -14,7 +14,7 @@
 <body>
   <div class="container-center">
     <header class="header">
-      <nav class="main-nav main-nav--close">
+      <nav class="main-nav">
         <div class="header__wrapper">
           <a class="logo header__logo"
             aria-label="Переход на главную">
@@ -36,17 +36,20 @@
               height="18"
               alt="Cat energy logo" />
           </a>
-          <button class="menu-toggle header__button"
-            aria-label="Открыть/Закрыть меню">
-            <img src="/img/icon-mobile-menu.svg"
-              width="24"
-              height="18"
-              alt="Открыть/Закрыть меню" />
-          </button>
+          <div class="menu-toggle menu-toggle--close">
+            <button class="menu-toggle__button header__button"
+              aria-label="Открыть/Закрыть меню">
+              <img src="/img/icon-mobile-menu.svg"
+                width="24"
+                height="18"
+                alt="Открыть/Закрыть меню" />
+            </button>
+            <div class="menu-toggle__placeholder"></div>
+          </div>
         </div>
         <ul class="main-nav__list list index-nav">
           <li class="main-nav__item">
-            <a class="main-nav__link index-nav__link main-nav__link--active">Главная</a>
+            <a class="main-nav__link index-nav__link main-nav__link--active index-nav__link--active">Главная</a>
           </li>
           <li class="main-nav__item">
             <a class="main-nav__link index-nav__link"
@@ -113,7 +116,7 @@
             <p class="catalog-preview__description text">
               Заработать авторитет среди дворовых котов и даже собак? Серия Cat Energy Pro поможет вашему коту нарастить необходимые мышцы!</p>
             <a class="catalog-preview__to-catalog"
-              href="cataloghtml">Каталог pro
+              href="catalog.html">Каталог pro
             </a>
           </li>
         </ul>

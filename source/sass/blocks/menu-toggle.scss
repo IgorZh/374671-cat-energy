@@ -1,6 +1,23 @@
-.menu-toggle {
-  background-color: #ffffff;
-  border: 0;
+.menu-toggle__button {
   padding: 0;
+
+  border: 0;
+  background-color: #ffffff;
+
   cursor: pointer;
+}
+
+.menu-toggle__placeholder {
+  width: 24px;
+  display: none;
+}
+
+.menu-toggle--close {
+  .menu-toggle__placeholder {
+    display: block;
+  }
+
+  .menu-toggle__button {
+    display: none;
+  }
 }

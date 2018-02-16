@@ -1,11 +1,15 @@
 (function() {
   var nav = document.querySelector(".main-nav");
+  var toggleContainer = document.querySelector(".menu-toggle");
+  var toggleButton = document.querySelector(".menu-toggle__button");
 
-  function handleToggle(e) {
+  toggleContainer.classList.toggle("menu-toggle--close");
+
+  handleToggle();
+
+  function handleToggle() {
     nav.classList.toggle("main-nav--close");
   }
 
-  document
-    .querySelector(".menu-toggle")
-    .addEventListener("click", handleToggle);
+  toggleButton.addEventListener("click", handleToggle);
 })();

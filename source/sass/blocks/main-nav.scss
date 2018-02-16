@@ -107,11 +107,5 @@
 
   .main-nav__link {
     color: #222222;
-
-    &--active {
-      &::after {
-        background-color: #ffffff;
-      }
-    }
   }
 }
